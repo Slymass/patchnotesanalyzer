@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://success.sciforma.com/fr/release/2024.09 -->
+<html lang="fr" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class=" js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<noscript><meta http-equiv="Refresh" content="0; URL=/fr/big_pipe/no-js?destination=/fr/release/2024.09" />
+</noscript><meta name="description" content="Ce document présente les anomalies qui ont été corrigées ainsi que les améliorations et les nouvelles fonctionnalités qui ont été implémentées dans Sciforma 2024.09, soit dans le produit, soit dans la configuration par défaut, dans Vantage et dans Deliver.Sciforma 2024.09 est une mise à jour corrective de Sciforma 2024.Dans le produit, 7 améliorations ont été intégrées et 39 anomalies ont été corrigées.Dans la configuration par défaut Sciforma, 2 améliorations ont été intégrées et 8 anomalies ont été corrigées.Dans Vantage, 6 anomalies ont été corrigées.">
+<link rel="canonical" href="https://success.sciforma.com/fr/release/2024.09">
+<meta name="google-site-verification" content="kYb3BGDoszy64Qm4vxCkiN3tXT2N2hwvoq1nsCCLKqg">
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>div#sliding-popup, div#sliding-popup .eu-cookie-withdraw-banner, .eu-cookie-withdraw-tab {background: #0779bf} div#sliding-popup.eu-cookie-withdraw-wrapper { background: transparent; } #sliding-popup h1, #sliding-popup h2, #sliding-popup h3, #sliding-popup p, #sliding-popup label, #sliding-popup div, .eu-cookie-compliance-more-button, .eu-cookie-compliance-secondary-button, .eu-cookie-withdraw-tab { color: #ffffff;} .eu-cookie-withdraw-tab { border-color: #ffffff;}</style>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="icon" href="https://success.sciforma.com/themes/custom/skc_theme/favicon.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://success.sciforma.com/en/release/2024.09">
+<link rel="alternate" hreflang="fr" href="https://success.sciforma.com/fr/release/2024.09">
+<script type="text/javascript" async="" src="./2024-09_files/js"></script><script src="./2024-09_files/gtm.js.téléchargement" async=""></script><script src="./2024-09_files/eu_cookie_compliance.script.js.téléchargement" defer=""></script>
+
+    <title>Guide de mise à jour Sciforma&nbsp;2024.09, Vantage et Deliver | Sciforma Customer Success Center</title>
+    <link rel="stylesheet" media="all" href="./2024-09_files/css_mV-8BV68l4PjSSX3eg1TSRLq6g-nS01Fja1lujr1L0Y.css">
+<link rel="stylesheet" media="all" href="./2024-09_files/css_Q7RdL-aAODZdJCT4rr6Cg-J_PwusZMdE3Xedwvu8PmQ.css">
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"fr\/","currentPath":"node\/231316","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"fr"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJxtz0sSgyAMBuALgRyJCRiRAoZJQqfevnbaTdVNHt-fTUJOvueOLvwGE4hUlKH7AMyZ3ELcrpoqBahWdK95S9f80CImEqObeXSoE0TNT7SfwODwkahkPFrrNcMW0d2hn3GBUdUkolTRKySXjnLeJ3jA6x-bWbMo8e4acLEglhFmIyV6XbHh-QXZRbG5AIJm9LiO8r3zK9aO7G7sDbmifIM","theme":"skc_theme","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"google\nnonGooglePixels\nnonGoogleScripts\nnonGoogleIframes","blocklist_classes":"customScripts\ncustomPixels","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-00000"]},"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"bigPipePlaceholderIds":{"callback=Drupal%5Cblock%5CBlockViewBuilder%3A%3AlazyBuilder\u0026args%5B0%5D=releasenotessidebar\u0026args%5B1%5D=full\u0026args%5B2%5D\u0026token=OS9CxFCjq7CeLZ5H6kA9hPzsWGIlqcDzlXkEee082_c":true,"callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages\u0026args%5B0%5D\u0026token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA":true},"eu_cookie_compliance":{"cookie_policy_version":"1.0.0","popup_enabled":true,"popup_agreed_enabled":false,"popup_hide_agreed":false,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv role=\u0022alertdialog\u0022 aria-labelledby=\u0022popup-text\u0022  class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Ch2\u003ENous utilisons des cookies sur ce site afin d\u0027am\u00e9liorer votre exp\u00e9rience utilisateur.\u003C\/h2\u003E\u003Cp\u003EEn cliquant sur le bouton Accepter, vous nous autorisez \u00e0 le faire.\u003C\/p\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EEn savoir plus\u003C\/button\u003E\n          \u003C\/div\u003E\n\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003EAccepter\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003ENon, merci.\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv role=\u0022alertdialog\u0022 aria-labelledby=\u0022popup-text\u0022  class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Ch2\u003ENous utilisons des cookies sur ce site afin d\u0027am\u00e9liorer votre exp\u00e9rience utilisateur.\u003C\/h2\u003E\u003Cp\u003EEn cliquant sur le bouton Accepter, vous nous autorisez \u00e0 le faire.\u003C\/p\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EEn savoir plus\u003C\/button\u003E\n          \u003C\/div\u003E\n\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003EAccepter\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003ENon, merci.\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","mobile_breakpoint":768,"popup_html_agreed":false,"popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/privacy","popup_link_new_window":true,"popup_position":false,"fixed_top_position":true,"popup_language":"fr","store_consent":false,"better_support_for_screen_readers":false,"cookie_name":"","reload_page":false,"domain":"","domain_all_sites":false,"popup_eu_only":false,"popup_eu_only_js":false,"cookie_lifetime":100,"cookie_session":0,"set_cookie_session_zero_on_disagree":0,"disagree_do_not_show_popup":false,"method":"opt_in","automatic_cookies_removal":true,"allowed_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EParam\u00e8tres de confidentialit\u00e9\u003C\/button\u003E\n\u003Cdiv aria-labelledby=\u0022popup-text\u0022 class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022 role=\u0022document\u0022\u003E\n      \u003Ch2\u003ENous utilisons des cookies sur ce site pour am\u00e9liorer votre exp\u00e9rience d\u0027utilisateur.\u003C\/h2\u003E\u003Cp\u003EVous nous autorisez \u00e0 installer des cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button \u0022\u003ERetirer le consentement\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","withdraw_enabled":false,"reload_options":0,"reload_routes_list":"","withdraw_button_on_info_popup":false,"cookie_categories":[],"cookie_categories_details":[],"enable_save_preferences_button":true,"cookie_value_disagreed":"0","cookie_value_agreed_show_thank_you":"1","cookie_value_agreed":"2","containing_element":"body","settings_tab_enabled":false,"olivero_primary_button_classes":"","olivero_secondary_button_classes":"","close_button_action":"close_banner","open_by_default":true,"modules_allow_popup":true,"hide_the_banner":false,"geoip_match":true},"history":{"nodesToMarkAsRead":{"231316":true}},"user":{"uid":"3414","permissionsHash":"f979c4cc00ab8910ce9f629e41836676649e3e39060a4e48392fd847be7abd13"}}</script>
+<script src="./2024-09_files/js_zWNdXR5fY1T33dfQQPivYUTif4nMTkJ4QkQJed7xbqk.js.téléchargement"></script>
+<script src="./2024-09_files/gtm(1).js.téléchargement"></script><script async="" src="./2024-09_files/gtm(2).js.téléchargement" type="text/javascript"></script>
+<script src="./2024-09_files/gtag.js.téléchargement"></script>
+<script src="./2024-09_files/js_QqhsYhS7KLMr4kPmdhQcQ-TWm7e-N0eBInm8zhV0l4E.js.téléchargement"></script>
+
+  <script src="chrome-extension://lmbopdiikkamfphhgcckcjhojnokgfeo/src/antidoteAide.js" id="script_antidote_aide"></script></head>
+  <body class="layout-two-sidebars page-node-231316 user-logged-in path-node node--type-release-note eu-cookie-compliance-status-2" data-eu-cookie-compliance-once="true">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+      </symbol>
+      <symbol id="info-fill" viewBox="0 0 16 16">
+        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+      </symbol>
+      <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+      </symbol>
+    </svg>
+    <a href="https://success.sciforma.com/fr/release/2024.09#main-content" class="visually-hidden-focusable">
+      Aller au contenu principal
+    </a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-00000"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    <div id="page-wrapper">
+  <div id="page">
+
+    <header id="header" class="header border-bottom" role="banner" aria-label="Site header">
+              <nav class="navbar container navbar-expand-lg" id="navbar-main">
+                              <a href="https://success.sciforma.com/fr" title="Accueil" rel="home" class="navbar-brand">
+              <img src="./2024-09_files/logo.png" alt="Accueil" class="img-fluid d-inline-block align-top">
+            
+    </a>
+    
+
+            <div class="collapse navbar-collapse justify-content-end container" id="CollapsingNavbar">
+              <div class="row">
+                <div class="col-12 pe-0">
+                  <ul class="d-lg-flex list-inline main-menu align-items-center">
+
+                    
+                    <li class="list-inline-item mb-3 mb-lg-0 d-block">
+<form class="skc-common-search" data-drupal-selector="skc-common-search" action="https://success.sciforma.com/fr/release/2024.09" method="post" id="skc-common-search" accept-charset="UTF-8">
+  <div class="d-flex inline-wrapper in-menu js-form-wrapper form-wrapper" data-drupal-selector="edit-wrapper" id="edit-wrapper">
+
+<fieldset class="form-group js-form-item js-form-type-textfield form-type-textfield js-form-item-keys form-item-keys form-no-label search-box-wrapper input-group">
+      <label for="edit-keys" class="visually-hidden js-form-required form-required">Search keys</label>
+        <input class="mt-0 required form-control" data-drupal-selector="edit-keys" type="text" id="edit-keys" name="keys" value="" size="100" maxlength="128" placeholder="" required="required" aria-required="true">
+
+  <button type="reset" class="btn bg-transparent close-icon" data-once="search_box">
+    <i class="fa fa-times"></i>
+  </button>
+        </fieldset>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input class="form-control js-form-submit form-submit fas" data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="">
+</div>
+</div>
+<input data-drupal-selector="form-yezmfymyzchsfstn3cd6kddvx3qpxonoljjx09fee4g" type="hidden" name="form_build_id" value="form-YezmfYMyZchSfstn3cd6KDdVx3QPxonoLjjx09fEe4g" class="form-control">
+<input data-drupal-selector="edit-skc-common-search-form-token" type="hidden" name="form_token" value="PsdZfDMlWo74QZububHz7wT6PXsRQZMZcBtNmrkOk-k" class="form-control">
+<input data-drupal-selector="edit-skc-common-search" type="hidden" name="form_id" value="skc_common_search" class="form-control">
+
+</form>
+</li>
+
+                                        <li class="list-inline-item">
+                      <ul class="nav navbar language-switcher">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle boxed-link" href="https://success.sciforma.com/fr/release/2024.09" id="language-switcher" aria-label="language switcher, current language is Français" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Français</a>
+                          <div class="dropdown-menu" aria-labelledby="language-switcher">
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/en/release/2024.09">English</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/de/node/231316">Deutsch</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/es/node/231316">Español</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/ja/node/231316"> 日本語</a>
+                                                      </div>
+                        </li>
+                      </ul>
+                    </li>
+
+                                        <li class="list-inline-item">
+                      <ul class="nav navbar version-switcher">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle boxed-link" href="https://success.sciforma.com/fr/release/2024.09#" id="version-switcher" aria-label="version switcher, current version is 2025.01" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2025.01</a>
+                          <div class="dropdown-menu" aria-labelledby="version-switcher">
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/112?destination=/fr/release/2025.01%3Fversion-change%3D112">2025.01</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/110?destination=/fr/release/2024.12%3Fversion-change%3D110">2024.12</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/109?destination=/fr/release/2024.11%3Fversion-change%3D109">2024.11</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/108?destination=/fr/release/2024.10%3Fversion-change%3D108">2024.10</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/107?destination=/fr/release/2024.09%3Fversion-change%3D107">2024.09</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/106?destination=/fr/release/2024.08%3Fversion-change%3D106">2024.08</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/105?destination=/fr/release/2024.07%3Fversion-change%3D105">2024.07</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/104?destination=/fr">2024.06</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/103?destination=/fr/release/2024.05%3Fversion-change%3D103">2024.05</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/102?destination=/fr/release/2024.04%3Fversion-change%3D102">2024.04</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/101?destination=/fr/release/2024.03%3Fversion-change%3D101">2024.03</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/100?destination=/fr/release/2024.02%3Fversion-change%3D100">2024.02</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/99?destination=/fr/release/2024.01%3Fversion-change%3D99">2024.01</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/97?destination=/fr/release/2023.12%3Fversion-change%3D97">2023.12</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/96?destination=/fr/release/2023.11%3Fversion-change%3D96">2023.11</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/95?destination=/fr/release/2023.10%3Fversion-change%3D95">2023.10</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/94?destination=/fr/release/2023.09%3Fversion-change%3D94">2023.09</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/93?destination=/fr/release/2023.08%3Fversion-change%3D93">2023.08</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/92?destination=/fr/release/2023.07%3Fversion-change%3D92">2023.07</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/91?destination=/fr/release/2023.06%3Fversion-change%3D91">2023.06</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/90?destination=/fr/release/2023.05%3Fversion-change%3D90">2023.05</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/89?destination=/fr/release/2023.04%3Fversion-change%3D89">2023.04</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/88?destination=/fr/release/2023.03%3Fversion-change%3D88">2023.03</a>
+                                                          <a class="dropdown-item" href="https://success.sciforma.com/fr/skc-change-version/87?destination=/fr/release/2023.02%3Fversion-change%3D87">2023.02</a>
+                                                      </div>
+                        </li>
+                      </ul>
+                    </li>
+
+                                        <li class="list-inline-item">
+                                              <ul class="list-inline">
+                                                      <li class="list-inline-item"><a href="https://success.sciforma.com/fr/user" class="boxed-link no-text"><i class="fas fa-user"></i></a></li>
+                                                    <li class="list-inline-item"><a href="https://success.sciforma.com/fr/user/logout?token=RaW53G2-dcMaauP5qZpZ0XOVnLjVt1OuIVjQdOOmWmU" class="boxed-link">Déconnexion <i class="fas fa-sign-out-alt"></i></a></li>
+                        </ul>
+                      
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+                              </nav>
+          </header>
+
+    <div id="main-wrapper" class="layout-main-wrapper clearfix min-vh-100">
+              <div id="main" class="container">
+          
+          <div class="row clearfix g-0">
+              <main class="main-content col d-flex flex-column justify-content-between" id="content" role="main">
+                <div class="row">
+                  <div class="col-12 col-xl-8 offset-xl-2">
+                      <section class="section">
+                        <a id="main-content" tabindex="-1"></a>
+                                                  <div id="block-skc-theme-page-title" class="block block-core block-page-title-block">
+  
+    
+      <div class="content">
+      
+  <h1 class="title"><span class="field field--name-title field--type-string field--label-hidden">Guide de mise à jour Sciforma&nbsp;2024.09, Vantage et Deliver</span>
+</h1>
+
+
+    </div>
+  </div>
+<div data-drupal-messages-fallback="" class="hidden"></div>
+<div id="block-skc-theme-content" class="block block-system block-system-main-block">
+  
+    
+      <div class="content">
+      <article data-history-node-id="231316" about="/fr/release/2024.09" class="node node--type-release-note node--view-mode-full clearfix">
+    
+  <div class="node__content clearfix">
+    
+
+
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Ce document présente les anomalies qui ont été corrigées ainsi que les améliorations et les nouvelles fonctionnalités qui ont été implémentées dans Sciforma 2024.09, soit dans le produit, soit dans la configuration par défaut, dans Vantage et dans Deliver.</p><p>Sciforma 2024.09 est une mise à jour corrective de Sciforma 2024.</p><p>Dans le produit, 7 améliorations ont été intégrées et 39 anomalies ont été corrigées.</p><p>Dans la configuration par défaut Sciforma, 2 améliorations ont été intégrées et 8 anomalies ont été corrigées.</p><p>Dans Vantage, 6 anomalies ont été corrigées.</p><p>Dans Deliver, 1 amélioration a été intégrée et 3 anomalies ont été corrigées.</p><p>Pour les<strong> </strong>intégrations, 1 amélioration a été intégrée.</p><p>Afin d’accéder aux différentes sections, veuillez cliquer sur les liens suivants&nbsp;:</p><ul style="list-style-type:disc"><li><a href="https://success.sciforma.com/fr/release/2024.09#doc2">Rappel important pour les mises à jour</a></li><li><a href="https://success.sciforma.com/fr/release/2024.09#doc3">Améliorations du produit</a></li><li><a href="https://success.sciforma.com/fr/release/2024.09#doc15">Anomalies corrigées du produit</a></li><li><a href="https://success.sciforma.com/fr/release/2024.09#doc65">Améliorations de la configuration par défaut</a></li><li><a href="https://success.sciforma.com/fr/release/2024.09#doc69">Anomalies corrigées de la configuration par défaut</a></li><li><a href="https://success.sciforma.com/fr/release/2024.09#doc84">Anomalies corrigées de Vantage</a></li><li><a href="https://success.sciforma.com/fr/release/2024.09#doc94">Améliorations de Deliver</a></li><li><a href="https://success.sciforma.com/fr/release/2024.09#doc97">Anomalies corrigées de Deliver</a></li><li><a href="https://success.sciforma.com/fr/release/2024.09#doc103">Prérequis techniques</a></li></ul><h1 id="doc2">Rappel important pour les mises à jour</h1><ul style="list-style-type:disc"><li>Pour améliorer les performances des vues affichant l’indice de santé de plusieurs projets, l’indice de santé est désormais précalculé lors de la publication du projet. En conséquence, il faut exécuter la tâche planifiée suivante lors du passage en version&nbsp;2021.03 (ou ultérieure) afin d’initialiser les valeurs de l’indice de santé projet&nbsp;: Initialiser l’indice de santé statique du projet </li></ul><blockquote><strong>Important</strong>&nbsp;:<em> Concernant les systèmes dont la commande Publier a été substituée, veuillez ajouter la liste de commandes dédiée au précalcul de l’indice de santé</em>&nbsp;<em>:</em>&nbsp;<em>«</em>&nbsp;<em>Project - Publish Project - Continue - Capture Health Score</em>&nbsp;<em>».</em></blockquote><ul style="list-style-type:disc"><li>À partir de la version&nbsp;2023.01, afin de supporter l'implémentation de la nouvelle navigation et des nouveaux modules de Vantage, vous devrez de nouveau ajouter l’espace de travail <em>Rapports du projet </em>dans la rubrique <em>Rôles utilisateur </em>du Designer car l’espace de travail <em>Rapports </em>n’existe plus.</li></ul><h1 id="doc3">Améliorations du produit</h1><h2 id="doc4">Designer</h2><h3 id="doc5">#SCI-4554</h3><p>Dans le Designer, rubrique <em>Forms</em> (<em>Fiches</em>), boîte de dialogue <em>Edit Gantt Block</em> (<em>Modifier Gantt), </em>onglet <em>Gantt</em>, lorsque l’option “Show all tasks on the project row” (“Afficher toutes les activités sur la ligne du projet”) est cochée, la commande <em>Modifier la couleur</em>, disponible en cliquant droit sur une barre du Gantt dans l’espace de travail <em>Centre des projets</em>, <em>Carte Projet</em>, onglet <em>Gantt</em>, n’est pas affichée.</p><p class="align-center"><img src="./2024-09_files/1-114_img_0.png"></p><h2 id="doc6">Feuille de temps (espace de travail natif)</h2><h3 id="doc7">#SCI-4483</h3><p>Dans l’espace de travail <em>Feuille de temps (natif)</em>, la charge prévue de la période active est désormais affichée dans le bouton «&nbsp;Présenter&nbsp;».</p><p class="align-center"><img src="./2024-09_files/1-114_img_1.png"></p><h2 id="doc8">Modifications d’objets/de champs</h2><h3 id="doc9">#SCI-3931</h3><p>Les transactions du projet peuvent désormais être transférées d’un modèle vers un projet lorsque l’option “Insert Project Transaction” (“Insérer les transactions Projet”) est cochée dans le Designer, rubrique <em>Command Lists </em>(<em>Listes de commandes</em>), élément “Project Creation - New Project Template Insert Template - Continue”.</p><p class="align-center"><img src="./2024-09_files/1-114_img_2.png"></p><h2 id="doc10">Version</h2><h3 id="doc11">#SCI-4621</h3><p>Une nouvelle vue <em>Roadmap </em>a été implémentée dans l’espace de travail <em>Centre des projets</em>&nbsp;; elle offre une vue d’ensemble de la chronologie des projets.</p><p class="align-center"><img src="./2024-09_files/1-114_img_3.png"></p><p>La grille disponible à gauche contient un tableau listant les projets et certains de leurs attributs (<em>Nom</em>, <em>IS</em>, <em>Début </em>et <em>Fin</em>). Le tableau disponible à droite présente une vue graphique composée d’une seule ligne par projet, où les éléments clés de la chronologie du projet (jalons/gates, références et avancement) sont affichés. Survoler un jalon/une gate affiche une infobulle, indiquant le nom du jalon/de la gate ainsi que la date de début. </p><p>Par défaut, la vue <em>Roadmap</em> affiche tous les projets actifs en version Travail pour lesquels l’utilisateur connecté dispose d’un accès en lecture ou en écriture. </p><p>Cette version est la première de la vue <em>Roadmap</em>. De nouvelles améliorations seront intégrées dans les prochaines versions, notamment la possibilité de personnaliser les informations telles que celles de la vue <em>Grille</em> (options de filtrage, possibilité de sauvegarder les vues, etc.).</p><blockquote><strong>Note&nbsp;:</strong> la vue <em>Roadmap </em>est en lecture seule.</blockquote><h3 id="doc12">#SCI-2998</h3><p>Dans tous les espaces de travail <em>Centre</em> (<em>Centre des projets</em>, <em>Centre des idées</em>, <em>Centre des actions</em>, <em>Centre des demandes d’évolution</em>, <em>Centre des livrables</em>, <em>Centre des événements</em> et <em>Centre des risques</em>), <em>barre d’outils principale</em>, champ <em>Vues</em>, de nouvelles options sont désormais disponibles lorsque l’utilisateur clique sur le bouton <em>Autre</em> (<img height="22" width="22" src="./2024-09_files/1-114_img_4.png" loading="lazy">) d’une vue spécifique, ce qui lui permet de sélectionner les commandes suivantes&nbsp;:</p><ul style="list-style-type:disc"><li><em>Renommer</em> – Permet de renommer la vue sélectionnée.</li></ul><p><em>Ajouter aux favoris</em>  – Permet d’indiquer si la vue est marquée comme «&nbsp;favori&nbsp;». Une fois qu’une vue a été marquée comme favorite, une étoile grise (<img height="23" width="23" src="./2024-09_files/1-114_img_5.png" loading="lazy">) est ajoutée après le nom de la vue dans la liste.</p><ul style="list-style-type:disc"><li><em>Supprimer des favoris</em> – Permet de supprimer la vue des favoris.</li></ul><p><em>Partager</em> – Permet de partager la vue avec l’ensemble de l’entreprise. Une fois qu’une vue a été partagée, une icône de partage (<img height="24" width="24" src="./2024-09_files/1-114_img_6.jpg" loading="lazy">) est ajoutée après le nom de la vue dans la liste.</p><ul style="list-style-type:disc"><li><em>Annuler le partage</em> – Permet d’annuler le partage de la vue avec l’ensemble de l’entreprise.</li><li><em>Supprimer </em>– Permet de supprimer la vue sélectionnée.</li></ul><p class="align-center"><img src="./2024-09_files/1-114_img_7.png"></p><p>Une démonstration est disponible en cliquant sur le lien suivant&nbsp;: <a href="https://keyedin.navattic.com/shared-views">Vues partagées</a>.</p><h2 id="doc13">Visualisation des données</h2><h3 id="doc14">#SCI-4299 (*Ajouté le 03/12/2024)</h3><p>Dans l'espace de travail <em>Centre des projets </em>, un indicateur est désormais affiché dans l'en-tête lorsqu'une colonne est triée en ordre ascendant ou descendant, ce qui permet à l'utilisateur de reconnaître visuellement que la colonne est triée.</p><p class="align-center"><img src="./2024-09_files/1-114_img_8.png"></p><h3 id="doc15">#SCI-4178</h3><p>Le nouvel espace de travail <em>Ma page d’accueil</em> a été implémenté dans le client&nbsp;HTML5. <em>Ma page d’accueil</em> est généralement la première page que l’utilisateur peut voir lorsqu’il se connecte à Sciforma&nbsp;; elle a pour but de faire office de point d’entrée principal dans l’application.</p><p>L’espace de travail <em>Ma page d’accueil</em> permet à l’utilisateur de consulter les principales informations relatives à son rôle utilisateur dans un seul emplacement, d’accéder à ses principaux espaces de travail en un seul clic et de procéder à des actions rapides.</p><p>L’espace de travail <em>Ma page d’accueil</em> est constitué&nbsp;:</p><ol style="list-style-type:decimal"><li>D’un bloc Actions rapides</li><li>D’une série de blocs d’information</li></ol><p class="align-center"><img src="./2024-09_files/1-114_img_9.png"></p><p>Les blocs affichés dans l’espace de travail <em>Ma page d’accueil</em> sont paramétrables par l’administrateur – les paramètres disponibles lui permettent de choisir quels blocs doivent être affichés en fonction des rôles utilisateurs.</p><p>Pour plus d’informations, veuillez vous référer à la documentation <em>Ma page d’accueil</em> ou découvrez notre démo de la nouvelle <a href="https://keyedin.navattic.com/homepage">Page d’accueil</a>. </p><blockquote><strong>Note&nbsp;: </strong>le contenu de <em>Ma page d’accueil</em> est géré par l’administrateur dans l’espace de travail <em>Paramètres système</em>, dossier <em>Paramètres Ma Page d’accueil</em>, onglet <em>Options générales</em>.</blockquote><h1 id="doc16">Anomalies corrigées du produit</h1><h2 id="doc17">API&nbsp;héritée</h2><h3 id="doc18">#SCI-4671</h3><p>Dans le Client&nbsp;HTML5, des problèmes de performance pouvaient survenir lorsque l’utilisateur créait des utilisateurs/ressources ou modifiait le calendrier. Cette anomalie a été corrigée&nbsp;; le temps d’exécution a été optimisé.</p><h2 id="doc19">Barre d’application</h2><h3 id="doc20">#SCI-4574</h3><p>Dans l’espace de travail <em>Centre des projets</em>, lorsque l’utilisateur cliquait sur la liste déroulante de sélection des vues, il n’était pas possible de faire défiler la liste vers le bas pour afficher toutes les options disponibles. Cette anomalie a été corrigée.</p><h3 id="doc21">#SCI-4478</h3><p>Dans le Designer, rubrique <em>Forms </em>(<em>Fiches</em>), lorsque l’utilisateur modifiait les champs associés à une colonne de grille dans la boîte de dialogue "Fields by Category" ("Champs par catégorie"), une anomalie interne pouvait survenir lorsque les champs affichés dans le client&nbsp;HTML5 ne correspondaient pas aux champs spécifiés dans la boîte de dialogue. Cette anomalie a été corrigée.</p><blockquote><strong>Note&nbsp;: </strong>cette anomalie peut être évitée dans les versions précédentes en spécifiant le champ principal dans la boîte de dialogue principale "Edit" ("Modifier"), puis en utilisant la boîte de dialogue "Fields by Category" ("Champs par catégorie") pour ne spécifier que le champ de la catégorie non principale.</blockquote><h3 id="doc22">#SCI-3852</h3><p>Dans l’espace de travail <em>Centre des projets</em>, lorsque l’utilisateur cliquait sur le bouton <em>Colonnes </em>dans la barre d’outils principale, il ne pouvait pas bénéficier du défilement automatique lorsqu’il essayait de déplacer des colonnes tout en haut ou tout en bas de la liste des colonnes. Cette anomalie a été corrigée.</p><h2 id="doc23">Commandes</h2><h3 id="doc24">#SCI-4713</h3><p>Les espaces de travail provenant d’une commande Lien pouvaient être affichés même s’ils ne faisaient pas partie du rôle utilisateur. Cette anomalie a été corrigée.</p><h2 id="doc25">Designer</h2><h3 id="doc26">#SCI-4754</h3><p>Dans certains cas, lorsque l’utilisateur lançait le Designer, un message d’erreur s’affichait et certaines formules de champ semblaient incorrectes pour la catégorie «&nbsp;Activité&nbsp;». Cette anomalie a été corrigée.</p><h3 id="doc27">#SCI-4647 (Ajouté le 04/10/24)</h3><p>L’espace de travail <em>Carte Projet</em> était affiché dans la barre de navigation Vantage même si le rôle de l’utilisateur ne lui permettait pas d’y accéder. Cette anomalie a été corrigée.</p><h3 id="doc28">#SCI-4638</h3><p>L’option «&nbsp;Max enregistrements&nbsp;» ne fonctionnait pas comme prévu dans les grilles. Cette anomalie a été corrigée. </p><h3 id="doc29">#SCI-4626</h3><p>Lorsque l’utilisateur fermait une fenêtre contextuelle, le mauvais onglet était affiché si deux onglets portaient le même nom. Cette anomalie a été corrigée.</p><h3 id="doc30">#SCI-4576</h3><p>Dans le Designer, rubrique <em>User Roles</em> (<em>Rôles utilisateur)</em>, lorsque l’utilisateur modifiait les droits d’accès, le serveur devait être redémarré pour que les modifications soient prises en compte. Cette anomalie a été corrigée.</p><h3 id="doc31">#SCI-4568</h3><p>Après la modification des listes de commandes, les substitutions n’étaient PAS prises en compte avant un certain temps. Cette anomalie a été corrigée.</p><h2 id="doc32">Feuille de temps (espace de travail natif)</h2><h3 id="doc33">#SCI-4855 (Ajouté le 04/10/24)</h3><p>La mise à jour des tableaux échouait lors de la mise à jour vers la version&nbsp;2024.09 de Sciforma. Cette anomalie a été corrigée..</p><h3 id="doc34">#SCI-4563</h3><p>Dans l’espace de travail <em>Feuille de temps (natif)</em>, les boutons «&nbsp;Présenter semaine&nbsp;», «&nbsp;Présenter mois&nbsp;» et «&nbsp;Présenter période&nbsp;» débordaient lorsque l’utilisateur était connecté en français. Cette anomalie a été corrigée&nbsp;; le texte a été raccourci.</p><h2 id="doc35">Localisation</h2><h3 id="doc36">#SCI-4724</h3><p>Dans les formules, la concaténation de chaînes de caractères ne prenait pas la localisation en compte. Cette anomalie a été corrigée.</p><h2 id="doc37">Modifications d’objets/de champs</h2><h3 id="doc38">#SCI-4686</h3><p>Lorsque l’utilisateur faisait défiler le contenu d’une liste déroulante, le contenu de la liste pouvait se mettre à clignoter, voire ne pas s’afficher du tout. Cette anomalie a été corrigée.</p><h3 id="doc39">#SCI-4660</h3><p>Dans l’espace de travail <em>Centre des projets</em>, un message d’erreur était parfois affiché lorsque l’utilisateur créait un nouveau projet et sélectionnait l’option «&nbsp;Importer XML&nbsp;». Cette anomalie a été corrigée.</p><h3 id="doc40">#SCI-4597</h3><p>Dans l’espace de travail <em>Gantt multiprojets</em>, un message d’erreur s’affichait parfois lorsque l’utilisateur sélectionnait des projets et ils ne chargeaient pas. Cette anomalie a été corrigée.</p><h3 id="doc41">#SCI-4579</h3><p>Dans certains cas, l’utilisateur pouvait rencontrer des difficultés pour accéder à des enregistrements de catégories libres qui étaient déjà verrouillés par l’exécution d’une autre commande. Cette anomalie a été corrigée.</p><h3 id="doc42">#SCI-4432</h3><p>Dans l’espace de travail <em>Centre de planification du projet</em>, un message d’erreur était parfois affiché lorsque l’utilisateur sélectionnait un projet. Cette anomalie a été corrigée.</p><h2 id="doc43">Performance</h2><h3 id="doc44">#SCI-4441</h3><p>Dans certains cas, lorsque l’utilisateur démarrait son environnement, un message d’erreur était affiché lorsque l’interface utilisateur Vantage était activée. Cette anomalie a été corrigée.</p><h2 id="doc45">Tâches planifiées</h2><h3 id="doc46">#SCI-2504</h3><p>Dans certains cas, les tâches planifiées étaient automatiquement annulées après leur prochaine exécution planifiée dans le Designer, rubrique <em>Scheduled Jobs </em>(<em>Tâches planifiées</em>). Cette anomalie a été corrigée.</p><h2 id="doc47">Visualisation des données</h2><h3 id="doc48">#SCI-4746</h3><p>Dans l’espace de travail <em>Centre des projets</em>, vue <em>Grille</em>, lorsque l’utilisateur appliquait des filtres dans la boîte de dialogue <em>Filtres</em>, les données n’étaient pas correctement filtrées. Cette anomalie a été corrigée.</p><h3 id="doc49">#SCI-4721 (Ajouté le 04/10/24)</h3><p>Une erreur de type «&nbsp;NullPointerException&nbsp;» pouvait se produire sur les projets si l’utilisateur n’avait qu’un accès en lecture. Cette anomalie a été corrigée.</p><h3 id="doc50">#SCI-4719</h3><p>Dans l’espace de travail <em>Paramètres système</em>, dossier <em>Paramètres Objets de travail</em>, onglet <em>Éléments de travail</em>, certains paramètres ne fonctionnaient pas correctement. Cette anomalie a été corrigée.</p><h3 id="doc51">#SCI-4675</h3><p>Dans l’espace de travail <em>Centre des projets</em>, une fois le processus de création de projet terminé, la barre de chargement était affichée par erreur en bas de la page, même si la <em>Carte Projet</em> avait bien été chargée. Cette anomalie a été corrigée.</p><h3 id="doc52">#SCI-4663</h3><p>Dans l’espace de travail <em>Centre des projets</em>, <em>Carte Projet</em>, onglet <em>Rapports</em>, thème <em>Synthèse</em>, rapport <em>CDA Report</em>, fenêtre contextuelle Description, un message d’erreur s’affichait lorsque l’utilisateur essayait de modifier le nom du rapport. Cette anomalie a été corrigée.</p><h3 id="doc53">#SCI-4655</h3><p>Dans l’espace de travail <em>Données d’entreprise</em>, onglet <em>Ressources</em>, fenêtre contextuelle <em>Disponibilité</em>, lorsque l’utilisateur saisissait une nouvelle date, celle-ci était automatiquement remplacée par le jour précédent si le fuseau horaire du système avait été modifié au préalable. Cette anomalie a été corrigée.</p><h3 id="doc54">#SCI-4651</h3><p>Dans l’espace de travail <em>Centre des projets</em>, dans certains cas, un message d’erreur s’affichait lorsque l’utilisateur cliquait sur le bouton «&nbsp;Ouvrir&nbsp;» disponible à droite du nom des projets et il n’était pas possible d’accéder à la <em>Carte Projet</em>. Cette anomalie a été corrigée.</p><h3 id="doc55">#SCI-4577</h3><p>Dans le Designer, rubrique <em>Forms </em>(<em>Fiches</em>), si le nombre de champs inclus dans un contrôle d’affichage «&nbsp;Trier par&nbsp;» ou «&nbsp;Grouper par&nbsp;» était trop important, aucune barre de défilement n’était affichée dans la liste déroulante lorsque les options «&nbsp;Trier par&nbsp;» ou «&nbsp;Grouper par&nbsp;» étaient utilisées dans le client&nbsp;HTML5. Cette anomalie a été corrigée.</p><h3 id="doc56">#SCI-4572</h3><p>Dans certains cas, lorsque l’utilisateur bookmarquait une page dans l’application, les sélections n’étaient pas restaurées lorsqu’il utilisait la page bookmarquée si l’interface utilisateur Vantage était activée. Cette anomalie a été corrigée.</p><h3 id="doc57">#SCI-4571</h3><p>Dans l’espace de travail <em>Travail</em>, onglet <em>Gantt</em>, lorsque l’utilisateur sélectionnait les commandes «&nbsp;Insérer à gauche&nbsp;» ou «&nbsp;Insérer à droite&nbsp;» pour insérer des colonnes dans le tableau du Gantt, un fond blanc était affiché à la place de la liste des champs. Cette anomalie a été corrigée.</p><h3 id="doc58">#SCI-4527</h3><p>L’espace de travail <em>Centre des projets</em> disparaissait par intermittence lorsque l’interface utilisateur Vantage était activée. Cette anomalie a été corrigée.</p><h3 id="doc59">#SCI-4511 (Ajouté le 04/10/24)</h3><p>Lorsque des utilisateurs ou des ressources étaient purgés dans la rubrique <em>Purge </em>(<em>Purger</em>) du Designer, ils ne disparaissaient pas immédiatement. Cette anomalie a été corrigée.</p><h3 id="doc60">#SCI-4504</h3><p>En raison de certains problèmes, les champs de type Vue sont désormais en lecture seule afin d’éviter les modifications des fiches HTML.</p><h3 id="doc61">#SCI-4490</h3><p>Dans la boîte de dialogue <em>Filtres</em>, l’opérateur «&nbsp;contient&nbsp;» était mal orthographié lorsque l’utilisateur était connecté en allemand. Cette anomalie a été corrigée.</p><h3 id="doc62">#SCI-4444</h3><p>Dans l’espace de travail <em>Travail</em>, onglet <em>Gantt</em>, boîte de dialogue <em>Mise à jour</em>, lorsque l’utilisateur essayait de sélectionner une date à partir d’un sélecteur de date pour le champ «&nbsp;Date de mise à jour&nbsp;», la sélection se faisait de manière incorrecte sur le jour précédent. Cette anomalie a été corrigée.</p><h3 id="doc63">#SCI-4439</h3><p>Dans certains cas, lorsque l’utilisateur envoyait une URL Plan contenant des noms d’onglets à un autre utilisateur de Plan utilisant une langue différente, le lien URL ne fonctionnait pas correctement. Cette anomalie a été corrigée.</p><h3 id="doc64">#SCI-4435</h3><p>Dans l’espace de travail <em>Centre des projets</em>, <em>Carte Projet</em>, onglet <em>Gantt</em>, tableau de <em>Gantt</em>, il n’était pas possible de faire glisser des activités non sélectionnées et de les déposer en haut du tableau. Cette anomalie a été corrigée.</p><h3 id="doc65">#SCI-4395</h3><p>Dans l’espace de travail <em>Rapports des projets</em>, lorsqu’un filtre Portefeuilles était appliqué dans le sélecteur de projets, il arrivait que l’utilisateur ne puisse visualiser aucun des projets. Cette anomalie a été corrigée.</p><h1 id="doc66">Améliorations de la configuration par défaut</h1><h2 id="doc67">Centre des projets</h2><h3 id="doc68">#MIL-4996</h3><p>Dans l’espace de travail <em>Centre des projets</em>, <em>Carte Projet</em>, onglet <em>Gantt</em>, volet <em>Ressources</em>, l’icône Engrenage (<img height="23" width="21" src="./2024-09_files/1-114_img_10.png" loading="lazy">), qui s’affichait jusqu’à présent lorsque l’utilisateur passait la souris sur la grille distribuée (comme illustré ci-dessous), a été supprimée pour plus de visibilité.</p><p class="align-center"><img src="./2024-09_files/1-114_img_11.png"> </p><h3 id="doc69">#MIL-4860</h3><p>La <em>Carte Projet</em> a été optimisée pour permettre la sélection de plusieurs projets et afficher les différents onglets (par exemple <em>Gantt</em>, <em>Eléments de travail</em>, <em>Ressources</em>, etc.) en vue multiprojets.</p><p>La <em>Carte Projet (multiprojets) </em>est conçue pour rationaliser la gestion de projets&nbsp;; elle fournit des détails sur plusieurs projets et simplifie la navigation dans les modules et les espaces de travail. Elle constitue un point central pour les activités de gestion de projets, permettant aux chefs de projets d’accéder facilement aux informations, aux outils et aux actions nécessaires au bon déroulement des projets.</p><p>La <em>Carte Projet (multiprojets) </em>est accessible directement à partir de l’espace de travail <em>Centre des projets</em>. Lorsque deux projets ou plus sont sélectionnés dans l’espace de travail <em>Centre des projets</em>, vue <em>Grille</em>, le bouton <em>Ouvrir la sélection</em> (<img height="29" width="28" src="./2024-09_files/1-114_img_12.png" loading="lazy">), disponible sur le côté gauche de la <em>barre d’outils principale</em>, apparaît.</p><p class="align-center"><img src="./2024-09_files/1-114_img_13.png"></p><p>Cliquer sur ce bouton ouvre la <em>Carte Projet (multiprojets)</em>, onglet <em>Synthèse</em>, sous-onglet <em>Résumé</em> (multiprojets), avec les projets sélectionnés affichés.</p><p class="align-center"><img src="./2024-09_files/1-114_img_14.png"></p><p>Les autres onglets disponibles dans la <em>Carte Projet</em> ont également été améliorés pour offrir des vues multiprojets, par exemple les onglets <em>Gantt</em> ou <em>Éléments de travail</em>, comme illustré ci-dessous.</p><p class="align-center"><img src="./2024-09_files/1-114_img_15.png"></p><p class="align-center"><img src="./2024-09_files/1-114_img_16.png"></p><p>Pour plus d’informations, veuillez vous référer à la documentation <em>Carte Projet (multiprojets) </em>ainsi qu'aux divers sujets <em>multiprojets</em>, ou découvrez notre démo de la nouvelle <a href="https://keyedin.navattic.com/multi-project-selection">sélection multiprojets</a>.</p><h1 id="doc70">Anomalies corrigées de la configuration par défaut</h1><h2 id="doc71">Agile</h2><h3 id="doc72">#MIL-4197</h3><p>Dans l’espace de travail <em>Travail</em>, onglet <em>Agile</em>, vue plein écran <em>Détails de l’itération</em>, onglet <em>Synthèse</em>, volet <em>Détails de l’itération</em>, lorsque l’utilisateur cliquait sur le libellé «&nbsp;Uniquement&nbsp;» d’une carte, tous les éléments du Backlog étaient toujours affichés dans la section Éléments du Backlog restants au lieu des éléments du Backlog dont la ressource était l’utilisateur sélectionné. Cette anomalie a été corrigée.</p><h2 id="doc73">Budget/Finances</h2><h3 id="doc74">#MIL-4970</h3><p>Dans l’espace de travail <em>Centre des projets</em>, <em>Carte Projet</em>, onglet <em>Finances</em>, boîte de dialogue <em>Estimation</em>, fenêtre contextuelle <em>Mise à jour de l’estimation à partir du Coût final</em>, la traduction en allemand des options «&nbsp;Toutes périodes&nbsp;» et «&nbsp;Personnalisée&nbsp;» était incorrecte. Cette anomalie a été corrigée.</p><h3 id="doc75">#MIL-4945</h3><p>Dans l’espace de travail <em>Centre des projets</em>, <em>Carte Projet</em>, onglet <em>Finances</em>, les boutons «&nbsp;Nouvelle capture&nbsp;» ou «&nbsp;Gérer les captures&nbsp;» ne fonctionnaient pas comme prévu. Cette anomalie a été corrigée.</p><h2 id="doc76">Éléments de travail</h2><h3 id="doc77">#MIL-4999</h3><p>Dans l’espace de travail <em>Centre des projets</em>, <em>Carte Projet</em>, onglet <em>Éléments de travail</em>, vue plein écran <em>Éléments de travail</em>, onglet <em>Boîte de réception</em>, vue <em>Détails de l’élément de travail</em>, fenêtre contextuelle <em>Types</em>, la traduction de «&nbsp;Types de livrables globaux&nbsp;» était incorrecte en allemand. Cette anomalie a été corrigée.</p><h3 id="doc78">#MIL-4979</h3><p>Dans l’espace de travail <em>Centre des projets</em>, <em>Carte Projet</em>, onglet <em>Éléments de travail</em>, tous les graphiques affichés dans la vue principale étaient affectés si l’utilisateur avait précédemment activé l’option d’affichage «&nbsp;Fermé&nbsp;» dans la vue plein écran <em>Eléments de travail</em>. Cette anomalie a été corrigée.</p><h2 id="doc79">Espace personnel</h2><h3 id="doc80">#MIL-4675</h3><p>Dans l’espace de travail <em>Feuille de temps</em>, lorsque l’option d’affichage «&nbsp;Afficher Parent&nbsp;» était activée, le nom des activités n’était pas visible pour certains projets. Cette anomalie a été corrigée.</p><h2 id="doc81">Général</h2><h3 id="doc82">#MIL-5000</h3><p>Dans l’espace de travail <em>Paramètres système</em>, dossier <em>Paramètres Objets de travail</em>, onglet <em>Options générales</em>, la traduction de l’option «&nbsp;Granularité des alertes pour les objets de travail&nbsp;» n’était pas correcte en allemand. Cette anomalie a été corrigée.</p><h2 id="doc83">Gestion de projets</h2><h3 id="doc84">#MIL-4386</h3><p>Dans l’espace de travail <em>Centre des projets</em>, <em>Carte Projet</em>, onglet <em>Gantt</em>, boîte de dialogue <em>Bulletin du projet</em>, dossier <em>Finances</em>, la barre de navigation temporelle ne fonctionnait pas correctement conformément aux options prédéfinies sélectionnées. Cette anomalie a été corrigée.</p><h1 id="doc85">Anomalies corrigées de Vantage</h1><h2 id="doc86">Connecteur de données</h2><h3 id="doc87">#VAN-1257</h3><p>Dans Vantage, dans certains cas, les projets créés dans Deliver n’apparaissaient pas dans Plan. Cela était dû à un dysfonctionnement du connecteur de données entre Deliver et Plan. Cette anomalie a été corrigée.</p><h3 id="doc88">#VAN-1233</h3><p>Dans Vantage, lorsque l’utilisateur mettait à jour des activités dans Deliver, l’ordre des activités était incorrect dans Plan. Cela était dû à une mise à jour silencieuse du champ «&nbsp;parent_task&nbsp;», qui entraînait le déplacement des activités dans une mauvaise position. Cette anomalie a été corrigée.</p><h3 id="doc89">#VAN-751</h3><p>Dans Vantage, dans certains cas, les activités créées dans Deliver ne s’affichaient pas dans Plan. Cette anomalie a été corrigée.</p><h2 id="doc90">Gestion de projets</h2><h3 id="doc91">#VAN-1213</h3><p>Dans l’espace de travail <em>Travail</em>, onglet <em>Perso.</em>, certaines cellules étaient incorrectement affichées comme étant vides ou avec une valeur nulle dans le tableau Ressources demandées. Cette anomalie a été corrigée.</p><h3 id="doc92">#VAN-1167</h3><p>Dans l’espace de travail <em>Travail</em>, onglet <em>Gantt</em>, lorsque l’utilisateur mettait à jour certaines activités ou les détails d’un projet, les activités disparaissaient du projet. Cette anomalie a été corrigée.</p><h2 id="doc93">Talend</h2><h3 id="doc94">#SCI-1230</h3><p>Lorsque l’utilisateur exécutait des tâches Talend pour mettre à jour des activités, il arrivait, dans certains cas, que des projets perdent toutes leurs activités.</p><h1 id="doc95">Améliorations de Deliver</h1><h2 id="doc96">Admin&nbsp;O3</h2><h3 id="doc97">#DELIVER-855</h3><p>Dans Deliver, l’utilisateur peut désormais contrôler l’accès aux champs utilisateur dans l’administration&nbsp;O3 grâce à un champ de contrainte. En appliquant une contrainte sur les champs utilisateur dans l’administration&nbsp;O3, il est possible de choisir entre deux options dans le menu déroulant des champs utilisateur&nbsp;:</p><ul style="list-style-type:disc"><li>Afficher les utilisateurs ayant un accès en lecture à l’objet.</li><li>Afficher tous les utilisateurs du répertoire.</li></ul><p>Pour plus d’informations, veuillez vous référer à la documentation «&nbsp;Comment appliquer une contrainte sur un champ utilisateur&nbsp;».</p><h1 id="doc98">Anomalies corrigées de Deliver</h1><h2 id="doc99">Gridboard</h2><h3 id="doc100">#DELIVER-1113</h3><p>Dans Deliver, l’espacement du texte «&nbsp;normal&nbsp;» présentait un défaut&nbsp;: la hauteur de ligne des paragraphes était trop importante dans le bloc Whiteboard de la carte. Cette anomalie a été corrigée. La hauteur des lignes a été réduite, ce qui permet de mieux différencier les paragraphes.</p><h3 id="doc101">#DELIVER-1067</h3><p>Dans Deliver, dans certains cas, les pièces jointes pouvaient disparaître des activités. Cette anomalie a été corrigée&nbsp;; tous les documents ont été restaurés.</p><h2 id="doc102">Intégration ARM</h2><h3 id="doc103">#DELIVER-1035</h3><p>Dans Deliver, certaines allocations pourraient être manquantes pour tous les utilisateurs sur certains projets. Cette anomalie a été corrigée grâce à une augmentation du délai d’attente.</p><h1 id="doc104">Améliorations des intégrations</h1><h2 id="doc105">API Plan</h2><h3 id="doc106">#INT-797 (Ajouté le 10/16/24)</h3><p>Un nouveau endpoint a été implémenté pour supprimer les plages de travail du calendrier pour une ressource spécifique.</p><h1 id="doc107">Prérequis techniques</h1><p>Des modifications et des ajouts sont fréquemment apportés à l’ensemble des versions spécifiques des systèmes d’exploitation, serveurs d’application et serveurs de bases de données pour lesquels Sciforma a été testé et certifié. Veuillez contacter nos équipes pour connaître les dernières informations à ce sujet. </p><blockquote><strong>Note :</strong> l’horloge système de l’utilisateur doit être régulièrement et précisément synchronisée avec l’horloge internet.</blockquote><h2 id="doc108">Serveurs</h2><ul style="list-style-type:disc"><li><strong>Serveur d’application :</strong> Apache Tomcat 9 avec Oracle Java 8 ou OpenJDK</li><li><strong>Serveur de données :</strong> PostgreSQL 12, PostgreSQL 14</li></ul><h2 id="doc109">Client HTML5</h2><ul style="list-style-type:disc"><li>Résolution d’écran : 1 366 x 768 (minimum technique), 1 600 x 1 050 (minimum recommandé), 1 920 x 1 080 ou plus (généralement recommandé).</li><li>4 Go de RAM affectée au minimum (8 Go recommandés).</li><li>Navigateur</li><ul style="list-style-type:circle"><li>Microsoft Edge</li><li>Microsoft Internet Explorer 10 ou 11</li><li>Google Chrome</li><li>Mozilla Firefox</li><li>Apple Safari</li></ul></ul><h2 id="doc110">Designer Sciforma</h2><ul style="list-style-type:disc"><li>Langue recommandée : anglais</li><li>Résolution d’écran : 1 366 x 768</li><li>4 Go de RAM affectée au minimum</li><li>Espace disque : 200 Mo minimum disponible pour Sciforma.</li><li>Oracle Java 8 ou OpenJDK 8</li><li>Systèmes d’exploitation :</li><ul style="list-style-type:circle"><li>Windows 7, 8.1, 10 ou 11</li><li>Mac OS X Lion ou version plus récente</li><li>Alpine Linux 3.16.1</li></ul></ul><h2 id="doc111">API REST</h2><ul style="list-style-type:disc"><li>Langue supportée : anglais</li></ul><h2 id="doc112">Application mobile Feuilles de temps </h2><ul style="list-style-type:disc"><li>Hébergée par Sciforma</li><li>Version produit : 2022.08 et versions suivantes</li></ul><h2 id="doc113">Plateforme Vantage</h2><p>Les utilisateurs devront autoriser les cookies de tierces parties pour pouvoir utiliser Vantage. Pour plus d’informations concernant les cookies de tierces parties, veuillez vous référer à la documentation « Comment autoriser les cookies de tiers ». </p><p><strong>Pour les clients ayant souscrit à Plan uniquement</strong></p><ul style="list-style-type:disc"><li>Installation&nbsp;:</li><ul style="list-style-type:circle"><li>POD 11 est requis si l’installation est hébergée par Sciforma</li><li>Un serveur Hydra est requis si l’installation est sur site</li></ul><li>Version produit : 2023.01 et versions suivantes</li></ul><p> <strong>Pour les clients ayant souscrit à Plan et Deliver</strong></p><ul style="list-style-type:disc"><li>Installation&nbsp;:</li><ul style="list-style-type:circle"><li>POD 11 est requis si l’installation est hébergée par Sciforma</li><li>Un serveur Hydra est requis si l’installation est sur site</li></ul><li>HPV2 activé sur les modules Deliver (activé par défaut pour tous les nouveaux clients Deliver à partir du 3e trimestre 2021)</li><li>Version produit : 2023.01 et versions suivantes</li><li>Les utilisateurs devront autoriser les cookies de tierces parties dans leur navigateur</li></ul><p><strong>Limitations</strong></p><p>Le connecteur de données :</p><ul style="list-style-type:disc"><li>ne fonctionne pas dans les environnements avec répartition de charge (load balanced).</li><li>n’est pas compatible avec les tâches planifiées dans le cloud.</li><li>n’est pas compatible avec les serveurs API dédiés.</li><li>n’est pas compatible avec l’API Java.</li></ul></div>
+      
+  </div>
+</article>
+
+    </div>
+  </div>
+
+
+                      </section>
+                  </div>
+                </div>
+                <footer class="site-footer">
+                  <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="contact">
+                        <a href="mailto:webmaster@sciforma.com">Contact</a>
+                      </div>
+                      <div class="copyright">
+                        ©2025 Sciforma
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+              </main>
+                          <div class="sidebar_first sidebar order-first col-xl-2" id="sidebar_first">
+                <aside class="section" role="complementary">
+                    <div id="block-sidebarmenu" class="block block-skc-common block-sidebar-menu">
+  
+    
+      <div class="content">
+      <div class="bootstrap-accordion">
+  <div class="accordion" id="sidebar-menu">
+          <div class="card">
+        <div class="card-header" id="sciforma-themes-sidebar-menu-heading">
+            <a class=" d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#sciforma-themes-sidebar-menu" aria-expanded="true" aria-controls="sciforma-themes-sidebar-menu">
+              <h3 class="mb-0"><i class="fas fa-book"></i> Sciforma</h3>
+              <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+
+        <div id="sciforma-themes-sidebar-menu" class="collapse " aria-labelledby="sciforma-themes-sidebar-menu-heading" data-bs-parent="#sidebar-menu" data-once="accordion_collapse">
+          <div class="card-body">
+            <div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-7" aria-expanded="true" aria-controls="sidebar-menu-type-7">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>Administrateur</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-7" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="d-flex theme-section-259866 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259866" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/cost-items-administration" hreflang="en">Cost items administration</a></div>
+<div id="theme-topics-259866"></div>
+<div class="d-flex theme-section-259867 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259867" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/default-configuration-administration" hreflang="en">Default Configuration administration</a></div>
+<div id="theme-topics-259867"></div>
+<div class="d-flex theme-section-259868 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259868" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/finance-items-administration" hreflang="en">Finance Items administration</a></div>
+<div id="theme-topics-259868"></div>
+<div class="d-flex theme-section-259869 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259869" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/ideas-administration" hreflang="en">Ideas administration</a></div>
+<div id="theme-topics-259869"></div>
+<div class="d-flex theme-section-259870 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259870" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/language-currency-settings" hreflang="en">Language &amp; Currency settings</a></div>
+<div id="theme-topics-259870"></div>
+<div class="d-flex theme-section-259871 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259871" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/library-items-administration" hreflang="en">Library Items administration</a></div>
+<div id="theme-topics-259871"></div>
+<div class="d-flex theme-section-259872 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259872" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/licensing" hreflang="en">Licensing</a></div>
+<div id="theme-topics-259872"></div>
+<div class="d-flex theme-section-259873 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259873" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/login-settings" hreflang="en">Login settings</a></div>
+<div id="theme-topics-259873"></div>
+<div class="d-flex theme-section-259911 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259911" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/microsoft-teams-chat-configuration" hreflang="en">Microsoft Teams Chat configuration</a></div>
+<div id="theme-topics-259911"></div>
+<div class="d-flex theme-section-259874 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259874" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/news-page-configuration" hreflang="en">News Page configuration</a></div>
+<div id="theme-topics-259874"></div>
+<div class="d-flex theme-section-259910 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259910" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/notifications" hreflang="en">Notifications</a></div>
+<div id="theme-topics-259910"></div>
+<div class="d-flex theme-section-259875 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259875" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/permissions-administration" hreflang="en">Permissions administration</a></div>
+<div id="theme-topics-259875"></div>
+<div class="d-flex theme-section-259876 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259876" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/portfolio-folders-administration" hreflang="en">Portfolio Folders administration</a></div>
+<div id="theme-topics-259876"></div>
+<div class="d-flex theme-section-259877 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259877" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/projects-administration" hreflang="en">Projects administration</a></div>
+<div id="theme-topics-259877"></div>
+<div class="d-flex theme-section-259878 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259878" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/resources-administration" hreflang="en">Resources administration</a></div>
+<div id="theme-topics-259878"></div>
+<div class="d-flex theme-section-259879 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259879" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/resources-configuration" hreflang="en">Resources configuration</a></div>
+<div id="theme-topics-259879"></div>
+<div class="d-flex theme-section-259880 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259880" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/rest-api" hreflang="en">REST API</a></div>
+<div id="theme-topics-259880"></div>
+<div class="d-flex theme-section-259881 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259881" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/risks-administration" hreflang="en">Risks administration</a></div>
+<div id="theme-topics-259881"></div>
+<div class="d-flex theme-section-259882 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259882" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/scheduled-jobs-configuration" hreflang="en">Scheduled Jobs configuration</a></div>
+<div id="theme-topics-259882"></div>
+<div class="d-flex theme-section-259883 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259883" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/status-reports-configuration" hreflang="en">Status Reports configuration</a></div>
+<div id="theme-topics-259883"></div>
+<div class="d-flex theme-section-259884 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259884" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/strategy-items-administration" hreflang="en">Strategy Items administration</a></div>
+<div id="theme-topics-259884"></div>
+<div class="d-flex theme-section-259885 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259885" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/system-maintenance" hreflang="en">System Maintenance</a></div>
+<div id="theme-topics-259885"></div>
+<div class="d-flex theme-section-259886 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259886" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/system-settings" hreflang="en">System Settings</a></div>
+<div id="theme-topics-259886"></div>
+<div class="d-flex theme-section-259887 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259887" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/time-configuration" hreflang="en">Time configuration</a></div>
+<div id="theme-topics-259887"></div>
+<div class="d-flex theme-section-259888 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259888" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/users-administration" hreflang="en">Users administration</a></div>
+<div id="theme-topics-259888"></div>
+<div class="d-flex theme-section-259889 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259889" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/work-items-administration" hreflang="en">Work Items administration</a></div>
+<div id="theme-topics-259889"></div>
+<div class="d-flex theme-section-259890 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259890" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/xml-export-update-scenario" hreflang="en">XML Export &amp; Update scenario</a></div>
+<div id="theme-topics-259890"></div>
+
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-8" aria-expanded="true" aria-controls="sidebar-menu-type-8">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>Designer</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-8" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="d-flex theme-section-259863 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259863" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/command-lists" hreflang="en">Command Lists</a></div>
+<div id="theme-topics-259863"></div>
+<div class="d-flex theme-section-259861 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259861" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/data-structure" hreflang="en">Data Structure</a></div>
+<div id="theme-topics-259861"></div>
+<div class="d-flex theme-section-259862 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259862" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/localization" hreflang="en">Localization</a></div>
+<div id="theme-topics-259862"></div>
+<div class="d-flex theme-section-259864 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259864" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/reporting-information-configuration" hreflang="en">Reporting Information configuration</a></div>
+<div id="theme-topics-259864"></div>
+<div class="d-flex theme-section-259865 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259865" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/user-interface-design" hreflang="en">User Interface design</a></div>
+<div id="theme-topics-259865"></div>
+
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-6" aria-expanded="true" aria-controls="sidebar-menu-type-6">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>Utilisateur</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-6" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="d-flex theme-section-259891 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259891" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/approche-agile" hreflang="fr">Approche Agile</a></div>
+<div id="theme-topics-259891"></div>
+<div class="d-flex theme-section-259893 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259893" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/methode-du-chemin-critique" hreflang="fr">Méthode du chemin critique</a></div>
+<div id="theme-topics-259893"></div>
+<div class="d-flex theme-section-259895 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259895" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/gestion-des-idees" hreflang="fr">Gestion des idées</a></div>
+<div id="theme-topics-259895"></div>
+<div class="d-flex theme-section-259897 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259897" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/elements-de-la-bibliotheque" hreflang="fr">Éléments de la bibliothèque</a></div>
+<div id="theme-topics-259897"></div>
+<div class="d-flex theme-section-259898 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259898" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/gestion-axee-sur-les-programmes" hreflang="fr">Gestion axée sur les programmes</a></div>
+<div id="theme-topics-259898"></div>
+<div class="d-flex theme-section-259896 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259896" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/gestion-de-portefeuilles-de-projets" hreflang="fr">Gestion de portefeuilles de projets</a></div>
+<div id="theme-topics-259896"></div>
+<div class="d-flex theme-section-259899 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259899" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/interdependances-des-projets" hreflang="fr">Interdépendances des projets</a></div>
+<div id="theme-topics-259899"></div>
+<div class="d-flex theme-section-259901 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259901" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/comptes-rendus-et-partage-des-informations" hreflang="fr">Comptes-rendus et partage des informations</a></div>
+<div id="theme-topics-259901"></div>
+<div class="d-flex theme-section-259900 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259900" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/gestion-des-risques" hreflang="fr">Gestion des risques</a></div>
+<div id="theme-topics-259900"></div>
+<div class="d-flex theme-section-259902 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259902" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/gestion-de-la-strategie" hreflang="fr">Gestion de la stratégie</a></div>
+<div id="theme-topics-259902"></div>
+<div class="d-flex theme-section-259903 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259903" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/gestion-des-programmes-de-supervision" hreflang="fr">Gestion des programmes de supervision</a></div>
+<div id="theme-topics-259903"></div>
+<div class="d-flex theme-section-259904 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259904" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/feuilles-de-temps-et-calendriers" hreflang="fr">Feuilles de temps et calendriers</a></div>
+<div id="theme-topics-259904"></div>
+<div class="d-flex theme-section-259905 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259905" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/elements-de-travail" hreflang="fr">Éléments de travail</a></div>
+<div id="theme-topics-259905"></div>
+<div class="d-flex theme-section-259894 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259894" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/finances" hreflang="fr">Finances</a></div>
+<div id="theme-topics-259894"></div>
+<div class="d-flex theme-section-259892 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259892" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/etude-dopportunite" hreflang="fr">Étude d’opportunité</a></div>
+<div id="theme-topics-259892"></div>
+<div class="d-flex theme-section-259906 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259906" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/gestion-de-projets-en-chaine-critique" hreflang="fr">Gestion de projets en Chaîne critique</a></div>
+<div id="theme-topics-259906"></div>
+<div class="d-flex theme-section-259907 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259907" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/phases-gates" hreflang="fr">Phases &amp; Gates</a></div>
+<div id="theme-topics-259907"></div>
+<div class="d-flex theme-section-259908 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259908" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/acquisition-des-ressources" hreflang="fr">Acquisition des ressources</a></div>
+<div id="theme-topics-259908"></div>
+<div class="d-flex theme-section-259909 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/259909" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/pmo" hreflang="fr">PMO</a></div>
+<div id="theme-topics-259909"></div>
+
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+          <div class="card">
+        <div class="card-header" id="vantage-themes-sidebar-menu-heading">
+            <a class=" d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#vantage-themes-sidebar-menu" aria-expanded="true" aria-controls="vantage-themes-sidebar-menu">
+              <h3 class="mb-0"><i class="fas fa-book"></i> Vantage</h3>
+              <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+
+        <div id="vantage-themes-sidebar-menu" class="collapse " aria-labelledby="vantage-themes-sidebar-menu-heading" data-bs-parent="#sidebar-menu" data-once="accordion_collapse">
+          <div class="card-body">
+            <div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-7" aria-expanded="true" aria-controls="sidebar-menu-type-7">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>Administrateur</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-7" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="d-flex theme-section-264068 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264068" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/vantage-administration" hreflang="en">Vantage administration</a></div>
+<div id="theme-topics-264068"></div>
+<div class="d-flex theme-section-264036 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264036" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/deliver-administration" hreflang="en">Deliver Administration</a></div>
+<div id="theme-topics-264036"></div>
+<div class="d-flex theme-section-264037 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264037" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/cost-items-administration-0" hreflang="en">Cost items administration</a></div>
+<div id="theme-topics-264037"></div>
+<div class="d-flex theme-section-264038 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264038" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/default-configuration-administration-0" hreflang="en">Default Configuration administration</a></div>
+<div id="theme-topics-264038"></div>
+<div class="d-flex theme-section-264039 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264039" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/finance-items-administration-0" hreflang="en">Finance Items administration</a></div>
+<div id="theme-topics-264039"></div>
+<div class="d-flex theme-section-264040 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264040" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/ideas-administration-0" hreflang="en">Ideas administration</a></div>
+<div id="theme-topics-264040"></div>
+<div class="d-flex theme-section-264041 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264041" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/language-currency-settings-0" hreflang="en">Language &amp; Currency settings</a></div>
+<div id="theme-topics-264041"></div>
+<div class="d-flex theme-section-264042 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264042" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/library-items-administration-0" hreflang="en">Library Items administration</a></div>
+<div id="theme-topics-264042"></div>
+<div class="d-flex theme-section-264043 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264043" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/licensing-0" hreflang="en">Licensing</a></div>
+<div id="theme-topics-264043"></div>
+<div class="d-flex theme-section-264044 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264044" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/login-settings-0" hreflang="en">Login settings</a></div>
+<div id="theme-topics-264044"></div>
+<div class="d-flex theme-section-264045 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264045" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/news-page-configuration-0" hreflang="en">News Page configuration</a></div>
+<div id="theme-topics-264045"></div>
+<div class="d-flex theme-section-264046 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264046" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/permissions-administration-0" hreflang="en">Permissions administration</a></div>
+<div id="theme-topics-264046"></div>
+<div class="d-flex theme-section-264047 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264047" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/portfolio-folders-administration-0" hreflang="en">Portfolio Folders administration</a></div>
+<div id="theme-topics-264047"></div>
+<div class="d-flex theme-section-264048 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264048" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/projects-administration-0" hreflang="en">Projects administration</a></div>
+<div id="theme-topics-264048"></div>
+<div class="d-flex theme-section-264049 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264049" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/resources-administration-0" hreflang="en">Resources administration</a></div>
+<div id="theme-topics-264049"></div>
+<div class="d-flex theme-section-264050 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264050" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/resources-configuration-0" hreflang="en">Resources configuration</a></div>
+<div id="theme-topics-264050"></div>
+<div class="d-flex theme-section-264051 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264051" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/rest-api-0" hreflang="en">REST API</a></div>
+<div id="theme-topics-264051"></div>
+<div class="d-flex theme-section-264052 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264052" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/risks-administration-0" hreflang="en">Risks administration</a></div>
+<div id="theme-topics-264052"></div>
+<div class="d-flex theme-section-264053 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264053" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/scheduled-jobs-configuration-0" hreflang="en">Scheduled Jobs configuration</a></div>
+<div id="theme-topics-264053"></div>
+<div class="d-flex theme-section-264054 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264054" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/status-reports-configuration-0" hreflang="en">Status Reports configuration</a></div>
+<div id="theme-topics-264054"></div>
+<div class="d-flex theme-section-264055 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264055" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/strategy-items-administration-0" hreflang="en">Strategy Items administration</a></div>
+<div id="theme-topics-264055"></div>
+<div class="d-flex theme-section-264056 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264056" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/system-maintenance-0" hreflang="en">System Maintenance</a></div>
+<div id="theme-topics-264056"></div>
+<div class="d-flex theme-section-264057 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264057" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/system-settings-0" hreflang="en">System Settings</a></div>
+<div id="theme-topics-264057"></div>
+<div class="d-flex theme-section-264058 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264058" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/time-configuration-0" hreflang="en">Time configuration</a></div>
+<div id="theme-topics-264058"></div>
+<div class="d-flex theme-section-264059 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264059" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/users-administration-0" hreflang="en">Users administration</a></div>
+<div id="theme-topics-264059"></div>
+<div class="d-flex theme-section-264060 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264060" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/work-items-administration-0" hreflang="en">Work Items administration</a></div>
+<div id="theme-topics-264060"></div>
+<div class="d-flex theme-section-264061 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264061" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/xml-export-update-scenario-0" hreflang="en">XML Export &amp; Update scenario</a></div>
+<div id="theme-topics-264061"></div>
+
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-8" aria-expanded="true" aria-controls="sidebar-menu-type-8">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>Designer</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-8" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="d-flex theme-section-264062 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264062" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/command-lists-0" hreflang="en">Command Lists</a></div>
+<div id="theme-topics-264062"></div>
+<div class="d-flex theme-section-264063 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264063" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/data-structure-0" hreflang="en">Data Structure</a></div>
+<div id="theme-topics-264063"></div>
+<div class="d-flex theme-section-264064 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264064" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/localization-0" hreflang="en">Localization</a></div>
+<div id="theme-topics-264064"></div>
+<div class="d-flex theme-section-264065 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264065" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/reporting-information-configuration-0" hreflang="en">Reporting Information configuration</a></div>
+<div id="theme-topics-264065"></div>
+<div class="d-flex theme-section-264066 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264066" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/en/2025.01/themes/user-interface-design-0" hreflang="en">User Interface design</a></div>
+<div id="theme-topics-264066"></div>
+
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-6" aria-expanded="true" aria-controls="sidebar-menu-type-6">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>Utilisateur</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-6" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="d-flex theme-section-264069 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264069" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/rechercher" hreflang="fr">Rechercher</a></div>
+<div id="theme-topics-264069"></div>
+<div class="d-flex theme-section-264029 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264029" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/accueil" hreflang="fr">Accueil</a></div>
+<div id="theme-topics-264029"></div>
+<div class="d-flex theme-section-264031 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264031" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/mon-travail" hreflang="fr">Mon travail</a></div>
+<div id="theme-topics-264031"></div>
+<div class="d-flex theme-section-264028 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264028" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/demandes" hreflang="fr">Demandes</a></div>
+<div id="theme-topics-264028"></div>
+<div class="d-flex theme-section-264033 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264033" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/projets" hreflang="fr">Projets</a></div>
+<div id="theme-topics-264033"></div>
+<div class="d-flex theme-section-264032 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264032" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/portefeuilles" hreflang="fr">Portefeuilles</a></div>
+<div id="theme-topics-264032"></div>
+<div class="d-flex theme-section-264034 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264034" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/ressources" hreflang="fr">Ressources</a></div>
+<div id="theme-topics-264034"></div>
+<div class="d-flex theme-section-264035 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264035" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/strategie" hreflang="fr">Stratégie</a></div>
+<div id="theme-topics-264035"></div>
+<div class="d-flex theme-section-264030 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264030" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/rapports" hreflang="fr">Rapports</a></div>
+<div id="theme-topics-264030"></div>
+<div class="d-flex theme-section-264067 theme-section"><a href="https://success.sciforma.com/fr/sidebar/sciforma/down/264067" class="use-ajax" data-once="ajax"><i class="fas fa-chevron-right mr-3"></i></a><a href="https://success.sciforma.com/fr/2025.01/themes/avantage" hreflang="fr">Avantage</a></div>
+<div id="theme-topics-264067"></div>
+
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+          <div class="card">
+        <div class="card-header" id="releases-sidebar-menu-heading">
+            <a class=" d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#releases-sidebar-menu" aria-expanded="true" aria-controls="releases-sidebar-menu">
+              <h3 class="mb-0"><i class="fas fa-download"></i> Versions</h3>
+              <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+
+        <div id="releases-sidebar-menu" class="collapse show" aria-labelledby="releases-sidebar-menu-heading" data-bs-parent="#sidebar-menu" data-once="accordion_collapse">
+          <div class="card-body">
+            <div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-111" aria-expanded="true" aria-controls="sidebar-menu-type-111">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>2025</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-111" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/release/2025.01" hreflang="en">2025.01</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-98" aria-expanded="true" aria-controls="sidebar-menu-type-98">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>2024</h4>
+    </a>
+  </div>
+  <div class="collapse show" id="sidebar-menu-type-98" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/release/2024.12" hreflang="en">2024.12</a></li><li><a href="https://success.sciforma.com/en/release/2024.11" hreflang="en">2024.11</a></li><li><a href="https://success.sciforma.com/en/release/2024.10" hreflang="en">2024.10</a></li><li><a href="https://success.sciforma.com/en/release/2024.09" class="active" hreflang="en">2024.09</a></li><li><a href="https://success.sciforma.com/en/release/2024.08" hreflang="en">2024.08</a></li><li><a href="https://success.sciforma.com/en/release/2024.07" hreflang="en">2024.07</a></li><li><a href="https://success.sciforma.com/en/release/2024.06" hreflang="en">2024.06</a></li><li><a href="https://success.sciforma.com/en/release/2024.05" hreflang="en">2024.05</a></li><li><a href="https://success.sciforma.com/en/release/2024.04" hreflang="en">2024.04</a></li><li><a href="https://success.sciforma.com/en/release/2024.03" hreflang="en">2024.03</a></li><li><a href="https://success.sciforma.com/en/release/2024.02" hreflang="en">2024.02</a></li><li><a href="https://success.sciforma.com/en/release/2024.01" hreflang="en">2024.01</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-85" aria-expanded="true" aria-controls="sidebar-menu-type-85">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>2023</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-85" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/release/2023.12" hreflang="en">2023.12</a></li><li><a href="https://success.sciforma.com/en/release/2023.11" hreflang="en">2023.11</a></li><li><a href="https://success.sciforma.com/en/release/2023.10" hreflang="en">2023.10</a></li><li><a href="https://success.sciforma.com/en/release/2023.09" hreflang="en">2023.09</a></li><li><a href="https://success.sciforma.com/en/release/2023.08" hreflang="en">2023.08</a></li><li><a href="https://success.sciforma.com/en/release/2023.07" hreflang="en">2023.07</a></li><li><a href="https://success.sciforma.com/en/release/2023.06" hreflang="en">2023.06</a></li><li><a href="https://success.sciforma.com/en/release/2023.05" hreflang="en">2023.05</a></li><li><a href="https://success.sciforma.com/en/release/2023.04" hreflang="en">2023.04</a></li><li><a href="https://success.sciforma.com/en/release/2023.03" hreflang="en">2023.03</a></li><li><a href="https://success.sciforma.com/en/release/2023.02" hreflang="en">2023.02</a></li><li><a href="https://success.sciforma.com/en/release/2023.01" hreflang="en">2023.01</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-61" aria-expanded="true" aria-controls="sidebar-menu-type-61">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>2022</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-61" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/release/2022.12" hreflang="en">2022.12</a></li><li><a href="https://success.sciforma.com/en/release/2022.11" hreflang="en">2022.11</a></li><li><a href="https://success.sciforma.com/en/release/2022.10" hreflang="en">2022.10</a></li><li><a href="https://success.sciforma.com/en/release/2022.09" hreflang="en">2022.09</a></li><li><a href="https://success.sciforma.com/en/release/2022.08" hreflang="en">2022.08</a></li><li><a href="https://success.sciforma.com/en/release/2022.07" hreflang="en">2022.07</a></li><li><a href="https://success.sciforma.com/en/release/2022.06" hreflang="en">2022.06</a></li><li><a href="https://success.sciforma.com/en/release/2022.05" hreflang="en">2022.05</a></li><li><a href="https://success.sciforma.com/en/release/2022.03" hreflang="en">2022.03</a></li><li><a href="https://success.sciforma.com/en/release/2022.02" hreflang="en">2022.02</a></li><li><a href="https://success.sciforma.com/en/release/2022.01" hreflang="en">2022.01</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-1" aria-expanded="true" aria-controls="sidebar-menu-type-1">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>2021</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-1" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/release/2021.12" hreflang="en">2021.12</a></li><li><a href="https://success.sciforma.com/en/release/2021.11" hreflang="en">2021.11</a></li><li><a href="https://success.sciforma.com/en/release/2021.10" hreflang="en">2021.10</a></li><li><a href="https://success.sciforma.com/en/release/2021.09" hreflang="en">2021.09</a></li><li><a href="https://success.sciforma.com/en/release/2021.08" hreflang="en">2021.08</a></li><li><a href="https://success.sciforma.com/en/release/2021.07" hreflang="en">2021.07</a></li><li><a href="https://success.sciforma.com/en/release/2021.06" hreflang="en">2021.06</a></li><li><a href="https://success.sciforma.com/en/release/2021.05" hreflang="en">2021.05</a></li><li><a href="https://success.sciforma.com/en/release/2021.04" hreflang="en">2021.04</a></li><li><a href="https://success.sciforma.com/en/release/2021.03" hreflang="en">2021.03</a></li><li><a href="https://success.sciforma.com/en/release/2021.02" hreflang="en">2021.02</a></li><li><a href="https://success.sciforma.com/en/release/2021.01" hreflang="en">2021.01</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-2" aria-expanded="true" aria-controls="sidebar-menu-type-2">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>2020</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-2" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/release/2020.12" hreflang="en">2020.12</a></li><li><a href="https://success.sciforma.com/en/release/2020.11" hreflang="en">2020.11</a></li><li><a href="https://success.sciforma.com/en/release/2020.10" hreflang="en">2020.10</a></li><li><a href="https://success.sciforma.com/en/release/2020.09" hreflang="en">2020.09</a></li><li><a href="https://success.sciforma.com/en/release/2020.08" hreflang="en">2020.08</a></li><li><a href="https://success.sciforma.com/en/release/2020.07" hreflang="en">2020.07</a></li><li><a href="https://success.sciforma.com/en/release/2020.06" hreflang="en">2020.06</a></li><li><a href="https://success.sciforma.com/en/release/2020.05" hreflang="en">2020.05</a></li><li><a href="https://success.sciforma.com/en/release/2020.04" hreflang="en">2020.04</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-3" aria-expanded="true" aria-controls="sidebar-menu-type-3">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>Sciforma 7.1</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-3" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/release/7.1z" hreflang="en">7.1z</a></li><li><a href="https://success.sciforma.com/en/release/7.1y" hreflang="en">7.1y</a></li><li><a href="https://success.sciforma.com/en/release/7.1x" hreflang="en">7.1x</a></li><li><a href="https://success.sciforma.com/en/release/7.1w" hreflang="en">7.1w</a></li><li><a href="https://success.sciforma.com/en/release/7.1v" hreflang="en">7.1v</a></li><li><a href="https://success.sciforma.com/en/release/7.1u" hreflang="en">7.1u</a></li><li><a href="https://success.sciforma.com/en/release/7.1t" hreflang="en">7.1t</a></li><li><a href="https://success.sciforma.com/en/release/7.1s" hreflang="en">7.1s</a></li><li><a href="https://success.sciforma.com/en/release/7.1r" hreflang="en">7.1r</a></li><li><a href="https://success.sciforma.com/en/release/7.1p" hreflang="en">7.1p</a></li><li><a href="https://success.sciforma.com/en/release/7.1q" hreflang="en">7.1q</a></li><li><a href="https://success.sciforma.com/en/release/7.1o" hreflang="en">7.1o</a></li><li><a href="https://success.sciforma.com/en/release/7.1n" hreflang="en">7.1n</a></li><li><a href="https://success.sciforma.com/en/release/7.1m" hreflang="en">7.1m</a></li><li><a href="https://success.sciforma.com/en/release/7.1l" hreflang="en">7.1L</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-9" aria-expanded="true" aria-controls="sidebar-menu-type-9">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>Sciforma 7</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-9" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/release/7.0z" hreflang="en">7.0z</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-10" aria-expanded="true" aria-controls="sidebar-menu-type-10">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>Sciforma 6</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-10" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/release/6.1f" hreflang="en">6.1f</a></li><li><a href="https://success.sciforma.com/en/release/6.1e" hreflang="en">6.1e</a></li><li><a href="https://success.sciforma.com/en/release/6.1d" hreflang="en">6.1d</a></li><li><a href="https://success.sciforma.com/en/release/6.1c" hreflang="en">6.1c</a></li><li><a href="https://success.sciforma.com/en/release/6.1b" hreflang="en">6.1b</a></li><li><a href="https://success.sciforma.com/en/release/6.1a" hreflang="en">6.1a</a></li><li><a href="https://success.sciforma.com/en/release/6.1" hreflang="en">6.1</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-14" aria-expanded="true" aria-controls="sidebar-menu-type-14">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>Infos</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-14" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/release/technical-requirements" hreflang="en">Technical requirements</a></li><li><a href="https://success.sciforma.com/en/release/java-certificate-expirations" hreflang="en">Java certificate expirations</a></li><li><a href="https://success.sciforma.com/en/release/sciforma-installation-guide-windows" hreflang="en">Sciforma Installation Guide for Windows</a></li><li><a href="https://success.sciforma.com/en/release/sciforma-installation-guide-linux" hreflang="en">Sciforma Installation Guide for Linux</a></li><li><a href="https://success.sciforma.com/en/release/sciforma-installation-guide-linux-silent" hreflang="en">Sciforma Installation Guide for Linux Silent</a></li></ul></div>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+          <div class="card">
+        <div class="card-header" id="product-notices-sidebar-menu-heading">
+            <a class=" d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#product-notices-sidebar-menu" aria-expanded="true" aria-controls="product-notices-sidebar-menu">
+              <h3 class="mb-0"><i class="fas fa-flag"></i> Notices produit</h3>
+              <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+
+        <div id="product-notices-sidebar-menu" class="collapse " aria-labelledby="product-notices-sidebar-menu-heading" data-bs-parent="#sidebar-menu" data-once="accordion_collapse">
+          <div class="card-body">
+            <div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-2025" aria-expanded="true" aria-controls="sidebar-menu-type-2025">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>2025</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-2025" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/move-java-21-june-release" hreflang="en">Move to Java 21 - June Release</a></li><li><a href="https://success.sciforma.com/en/notice-about-java-21" hreflang="en">Notice about Java 21</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-2023" aria-expanded="true" aria-controls="sidebar-menu-type-2023">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>2023</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-2023" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/notice-about-oracles-java-8-1.8.0382" hreflang="en">Notice about Oracle’s Java 8 (1.8.0_382)</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-2022" aria-expanded="true" aria-controls="sidebar-menu-type-2022">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>2022</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-2022" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/end-life-announcement-legacy-snet-platform-pod-9" hreflang="en">End of Life Announcement Legacy SNET Platform (Pod 9)</a></li><li><a href="https://success.sciforma.com/en/notice-about-sciforma-2022.02-build-8837" hreflang="en">Notice about Sciforma 2022.02 (Build 8837)</a></li><li><a href="https://success.sciforma.com/en/end-life-announcement-sciforma-6" hreflang="en">End of Life Announcement for Sciforma 6</a></li><li><a href="https://success.sciforma.com/en/end-life-announcement-sciforma-virtual-appliance-sva" hreflang="en">End of Life Announcement for Sciforma Virtual Appliance (SVA)</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-2021" aria-expanded="true" aria-controls="sidebar-menu-type-2021">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>2021</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-2021" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/support-openjdk" hreflang="en">Support of OpenJDK</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-2020" aria-expanded="true" aria-controls="sidebar-menu-type-2020">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>2020</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-2020" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/new-naming-convention-sciformas-release" hreflang="en">New naming convention for Sciforma’s release </a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-2019" aria-expanded="true" aria-controls="sidebar-menu-type-2019">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>2019</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-2019" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/time-distributed-cells-text-blocks-not-handling-properly-start-and-finish-dates-partial-intervals" hreflang="en">Time distributed cells in text blocks not handling properly the start and finish dates of partial intervals</a></li><li><a href="https://success.sciforma.com/en/notice-about-oracles-java-8-free-updates" hreflang="en">Notice about Oracle’s Java 8 free updates</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-2018" aria-expanded="true" aria-controls="sidebar-menu-type-2018">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>2018</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-2018" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/enforced-strong-passwords-built-authentication" hreflang="en">Enforced strong passwords for built-in authentication</a></li></ul></div>
+    </div>
+  </div>
+</div>
+<div class="sidebar-collapsible mb-1 collapsible-with-icon">
+  <div>
+    <a class="d-flex align-items-center collapsible-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu-type-2017" aria-expanded="true" aria-controls="sidebar-menu-type-2017">
+      <i class="fas fa-chevron-right me-3"></i>
+      <h4>2017</h4>
+    </a>
+  </div>
+  <div class="collapse " id="sidebar-menu-type-2017" data-once="collapsible accordion_collapse">
+    <div class="sidebar-collapsible-body mt-2 ms-2">
+      <div class="item-list"><ul class="mt-3"><li><a href="https://success.sciforma.com/en/reminder-end-oracle-and-mssql-support" hreflang="en">Reminder : End of Oracle and MSSQL support </a></li><li><a href="https://success.sciforma.com/en/sciforma-virtual-appliance-sva-available" hreflang="en">Sciforma virtual appliance (SVA) available</a></li><li><a href="https://success.sciforma.com/en/users-might-fail-see-all-expected-resources-7.0w-7.0x" hreflang="en">Users Might Fail To See All Expected Resources [7.0w, 7.0x]</a></li><li><a href="https://success.sciforma.com/en/upcoming-certificate-expiration-december-9-2017" hreflang="en">Upcoming Certificate Expiration on December 9, 2017 [&lt;6.0r, &lt;7.0o]</a></li></ul></div>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+          <div class="card">
+        <div class="card-header" id="support-sidebar-menu-heading">
+            <a class=" d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#support-sidebar-menu" aria-expanded="true" aria-controls="support-sidebar-menu">
+              <h3 class="mb-0"><i class="fas fa-phone"></i> Support</h3>
+              <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+
+        <div id="support-sidebar-menu" class="collapse " aria-labelledby="support-sidebar-menu-heading" data-bs-parent="#sidebar-menu" data-once="accordion_collapse">
+          <div class="card-body">
+            <div class="item-list"><ul><li><a href="https://success.sciforma.com/fr/support"><i class="fas fa-file-upload"></i>Transfert de fichier</a></li><li><a href="https://success.sciforma.com/support-links"><i class="fas fa-external-link-alt"></i>Liens vers le support</a></li></ul></div>
+          </div>
+        </div>
+      </div>
+          <div class="card">
+        <div class="card-header" id="training-sidebar-menu-heading">
+            <a class=" d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#training-sidebar-menu" aria-expanded="true" aria-controls="training-sidebar-menu">
+              <h3 class="mb-0"><i class="fas fa-graduation-cap"></i> Formations</h3>
+              <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+
+        <div id="training-sidebar-menu" class="collapse " aria-labelledby="training-sidebar-menu-heading" data-bs-parent="#sidebar-menu" data-once="accordion_collapse">
+          <div class="card-body">
+            <div class="training-category"><a href="https://success.sciforma.com/fr/training-type/administrateur" class="training-category-label" hreflang="fr">Administrateur</a><div class="item-list"><ul class="ml-2 mt-2"><li><a href="https://success.sciforma.com/fr/training/administrateur/parametres-du-systeme-sciforma" hreflang="fr">Paramètres du système Sciforma</a></li><li><a href="https://success.sciforma.com/fr/training/administrateur/formation-administration-journaliere" hreflang="fr">Formation administration journalière</a></li></ul></div></div>
+<div class="training-category"><a href="https://success.sciforma.com/fr/training-type/utilisateur" class="training-category-label" hreflang="fr">Utilisateur</a><div class="item-list"><ul class="ml-2 mt-2"><li><a href="https://success.sciforma.com/fr/training/utilisateur/presentation-de-linterface-utilisateur" hreflang="fr">Présentation de l'interface utilisateur</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/planification-liee-aux-delais-gantt" hreflang="fr">Planification liée aux délais (Gantt)</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/affectation-des-ressources" hreflang="fr">Affectation des ressources</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/utilisation-des-ressources" hreflang="fr">Utilisation des ressources</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/affectation-des-moyens" hreflang="fr">Affectation des moyens</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/affectation-des-transactions" hreflang="fr">Affectation des transactions</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/feuille-de-temps" hreflang="fr">Feuille de temps</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/demandes-dabsence" hreflang="fr">Demandes d'absence</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/agile-scrum" hreflang="fr">Agile – Scrum</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/gestion-des-idees" hreflang="fr">Gestion des idées</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/gestion-des-opportunites" hreflang="fr">Gestion des opportunités</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/gestion-de-portefeuilles-de-projets" hreflang="fr">Gestion de portefeuilles de projets</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/gestion-des-demandes-devolution" hreflang="fr">Gestion des demandes d'évolution</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/gestion-des-evenements" hreflang="fr">Gestion des événements</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/gestion-des-actions" hreflang="fr">Gestion des actions</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/gestion-des-livrables" hreflang="fr">Gestion des livrables</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/gestion-des-risques" hreflang="fr">Gestion des risques</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/indice-de-sante-du-projet" hreflang="fr">Indice de santé du projet</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/interdependances-des-projets" hreflang="fr">Interdépendances des projets</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/master-planning" hreflang="fr">Master Planning</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/allocations-de-ressources" hreflang="fr">Allocations de ressources</a></li><li><a href="https://success.sciforma.com/fr/training/utilisateur/couts-du-projet" hreflang="fr">Coûts du projet</a></li></ul></div></div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+</div>
+
+
+
+    </div>
+  </div>
+
+
+                </aside>
+              </div>
+                                      <div class="sidebar_second sidebar col-xl-2 order-first order-xl-last" id="sidebar_second">
+                <aside class="section" role="complementary">
+                    <div id="block-releasenotessidebar" class="block block-skc-releases block-skc-releases-release-notes-sidebar">
+  
+    
+      <div class="content">
+      <div class="item-list"><h3>Build</h3><ul><li><a href="https://sciforma-successcenter.s3.amazonaws.com/release-builds/GenericUnixSetup2024.09_13376.bin?response-content-disposition=attachment%3B%20filename%3D%22GenericUnixSetup2024.09_13376.bin%22&amp;x-user=pascal.lalancette%40ino.ca&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAV2T56YEJVXPQLNHT/20250228/us-east-1/s3/aws4_request&amp;X-Amz-Date=20250228T191845Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Signature=075d35228be06013d1ace5eaf620ef61fa503b4dc340a77df3743ac4f104b4a2">Linux/Unix<i class="fas fa-download"></i></a></li><li><a href="https://sciforma-successcenter.s3.amazonaws.com/release-builds/Setup2024.09_13376.exe?response-content-disposition=attachment%3B%20filename%3D%22Setup2024.09_13376.exe%22&amp;x-user=pascal.lalancette%40ino.ca&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAV2T56YEJVXPQLNHT/20250228/us-east-1/s3/aws4_request&amp;X-Amz-Date=20250228T191845Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Signature=28069038cb5a1eed09e8668e26fc2a70bc15a67978a237332696e3456f74989c">Windows<i class="fas fa-download"></i></a></li></ul></div><div class="item-list"><h3>Developer documentation</h3><ul><li><a href="https://success.sciforma.com/system/files/release-files/PSNextAPI-2024.09_13376.zip" target="_blank">API Javadoc<i class="fas fa-download"></i></a></li><li><a href="https://success.sciforma.com/system/files/release-files/Data%20Integration%20Studio_16.zip" target="_blank">Data integration studio<i class="fas fa-download"></i></a></li><li><a href="https://success.sciforma.com/system/files/release-files/SciformaScriptletAPI70_10.zip" target="_blank">Javascript documentation<i class="fas fa-download"></i></a></li><li><a href="https://success.sciforma.com/system/files/release-files/sciforma-restapi-2024.09.zip" target="_blank">REST API documentation &amp; OpenAPI<i class="fas fa-download"></i></a></li></ul></div><div class="item-list"><h3>Feature presentation</h3><ul><li><a href="https://keyedin.navattic.com/homepage" target="_blank">Homepage<i class="fas fa-external-link-alt"></i></a></li><li><a href="https://keyedin.navattic.com/multi-project-selection" target="_blank">Multi-Project Selection<i class="fas fa-external-link-alt"></i></a></li><li><a href="https://keyedin.navattic.com/shared-views" target="_blank">Shared Views<i class="fas fa-external-link-alt"></i></a></li></ul></div><div class="item-list"><h3>Notices</h3><ul><li><a href="https://success.sciforma.com/en/move-java-21-june-release" hreflang="en">26/02/2025 | Move to Java 21 - June Release</a></li><li><a href="https://success.sciforma.com/en/notice-about-java-21" hreflang="en">26/02/2025 | Notice about Java 21</a></li><li><a href="https://success.sciforma.com/en/notice-about-oracles-java-8-1.8.0382" hreflang="en">21/08/2023 | Notice about Oracle’s Java 8 (1.8.0_382)</a></li><li><a href="https://success.sciforma.com/en/end-life-announcement-legacy-snet-platform-pod-9" hreflang="en">02/12/2022 | End of Life Announcement Legacy SNET Platform (Pod 9)</a></li><li><a href="https://success.sciforma.com/en/notice-about-sciforma-2022.02-build-8837" hreflang="en">15/03/2022 | Notice about Sciforma 2022.02 (Build 8837)</a></li><li><a href="https://success.sciforma.com/en/end-life-announcement-sciforma-6" hreflang="en">16/02/2022 | End of Life Announcement for Sciforma 6</a></li><li><a href="https://success.sciforma.com/en/end-life-announcement-sciforma-virtual-appliance-sva" hreflang="en">16/02/2022 | End of Life Announcement for Sciforma Virtual Appliance (SVA)</a></li><li><a href="https://success.sciforma.com/en/support-openjdk" hreflang="en">16/11/2021 | Support of OpenJDK</a></li><li><a href="https://success.sciforma.com/en/new-naming-convention-sciformas-release" hreflang="en">04/03/2020 | New naming convention for Sciforma’s release </a></li><li><a href="https://success.sciforma.com/en/time-distributed-cells-text-blocks-not-handling-properly-start-and-finish-dates-partial-intervals" hreflang="en">02/12/2019 | Time distributed cells in text blocks not handling properly the start and finish dates of partial intervals</a></li><li><a href="https://success.sciforma.com/en/notice-about-oracles-java-8-free-updates" hreflang="en">28/08/2019 | Notice about Oracle’s Java 8 free updates</a></li><li><a href="https://success.sciforma.com/en/enforced-strong-passwords-built-authentication" hreflang="en">27/02/2018 | Enforced strong passwords for built-in authentication</a></li><li><a href="https://success.sciforma.com/en/reminder-end-oracle-and-mssql-support" hreflang="en">21/11/2017 | Reminder : End of Oracle and MSSQL support </a></li><li><a href="https://success.sciforma.com/en/sciforma-virtual-appliance-sva-available" hreflang="en">29/09/2017 | Sciforma virtual appliance (SVA) available</a></li><li><a href="https://success.sciforma.com/en/users-might-fail-see-all-expected-resources-7.0w-7.0x" hreflang="en">16/09/2017 | Users Might Fail To See All Expected Resources [7.0w, 7.0x]</a></li><li><a href="https://success.sciforma.com/en/upcoming-certificate-expiration-december-9-2017" hreflang="en">15/09/2017 | Upcoming Certificate Expiration on December 9, 2017 [&lt;6.0r, &lt;7.0o]</a></li></ul></div>
+    </div>
+  </div>
+
+
+                </aside>
+              </div>
+                      </div>
+        </div>
+          </div>
+      </div>
+</div>
+
+  </div>
+
+    
+    
+  <script src="./2024-09_files/js_PS2jmSNrD3y-Yw3TEoVQ1J3HtgAbKDmg13uKELHOEWQ.js.téléchargement"></script>
+<script src="./2024-09_files/eu_cookie_compliance.min.js.téléchargement" defer=""></script>
+<script src="./2024-09_files/js_VXw8_wq07Um7c0nH88BH_njP_Q4janPp8Hxbws0Pgcg.js.téléchargement"></script><div id="drupal-live-announce" class="visually-hidden" aria-live="polite" aria-busy="false"></div>
+
+<script type="application/vnd.drupal-ajax" data-big-pipe-event="start"></script>
+<script type="application/vnd.drupal-ajax" data-big-pipe-replacement-for-placeholder-with-id="callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages&amp;args%5B0%5D&amp;token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA">
+[{"command":"insert","method":"replaceWith","selector":"[data-big-pipe-placeholder-id=\u0022callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages\u0026args%5B0%5D\u0026token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA\u0022]","data":"","settings":null}]
+</script><script type="application/vnd.drupal-ajax" data-big-pipe-replacement-for-placeholder-with-id="callback=Drupal%5Cblock%5CBlockViewBuilder%3A%3AlazyBuilder&amp;args%5B0%5D=releasenotessidebar&amp;args%5B1%5D=full&amp;args%5B2%5D&amp;token=OS9CxFCjq7CeLZ5H6kA9hPzsWGIlqcDzlXkEee082_c">
+[{"command":"insert","method":"replaceWith","selector":"[data-big-pipe-placeholder-id=\u0022callback=Drupal%5Cblock%5CBlockViewBuilder%3A%3AlazyBuilder\u0026args%5B0%5D=releasenotessidebar\u0026args%5B1%5D=full\u0026args%5B2%5D\u0026token=OS9CxFCjq7CeLZ5H6kA9hPzsWGIlqcDzlXkEee082_c\u0022]","data":"\u003Cdiv id=\u0022block-releasenotessidebar\u0022 class=\u0022block block-skc-releases block-skc-releases-release-notes-sidebar\u0022\u003E\n  \n    \n      \u003Cdiv class=\u0022content\u0022\u003E\n      \u003Cdiv class=\u0022item-list\u0022\u003E\u003Ch3\u003EBuild\u003C\/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Ca href=\u0022https:\/\/sciforma-successcenter.s3.amazonaws.com\/release-builds\/GenericUnixSetup2024.09_13376.bin?response-content-disposition=attachment%3B%20filename%3D%22GenericUnixSetup2024.09_13376.bin%22\u0026amp;x-user=pascal.lalancette%40ino.ca\u0026amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\u0026amp;X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026amp;X-Amz-Credential=AKIAV2T56YEJVXPQLNHT\/20250228\/us-east-1\/s3\/aws4_request\u0026amp;X-Amz-Date=20250228T191845Z\u0026amp;X-Amz-SignedHeaders=host\u0026amp;X-Amz-Expires=300\u0026amp;X-Amz-Signature=075d35228be06013d1ace5eaf620ef61fa503b4dc340a77df3743ac4f104b4a2\u0022\u003ELinux\/Unix\u003Ci class=\u0022fas fa-download\u0022\u003E\u003C\/i\u003E\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022https:\/\/sciforma-successcenter.s3.amazonaws.com\/release-builds\/Setup2024.09_13376.exe?response-content-disposition=attachment%3B%20filename%3D%22Setup2024.09_13376.exe%22\u0026amp;x-user=pascal.lalancette%40ino.ca\u0026amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\u0026amp;X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026amp;X-Amz-Credential=AKIAV2T56YEJVXPQLNHT\/20250228\/us-east-1\/s3\/aws4_request\u0026amp;X-Amz-Date=20250228T191845Z\u0026amp;X-Amz-SignedHeaders=host\u0026amp;X-Amz-Expires=300\u0026amp;X-Amz-Signature=28069038cb5a1eed09e8668e26fc2a70bc15a67978a237332696e3456f74989c\u0022\u003EWindows\u003Ci class=\u0022fas fa-download\u0022\u003E\u003C\/i\u003E\u003C\/a\u003E\u003C\/li\u003E\u003C\/ul\u003E\u003C\/div\u003E\u003Cdiv class=\u0022item-list\u0022\u003E\u003Ch3\u003EDeveloper documentation\u003C\/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Ca href=\u0022https:\/\/success.sciforma.com\/system\/files\/release-files\/PSNextAPI-2024.09_13376.zip\u0022 target=\u0022_blank\u0022\u003EAPI Javadoc\u003Ci class=\u0022fas fa-download\u0022\u003E\u003C\/i\u003E\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022https:\/\/success.sciforma.com\/system\/files\/release-files\/Data%20Integration%20Studio_16.zip\u0022 target=\u0022_blank\u0022\u003EData integration studio\u003Ci class=\u0022fas fa-download\u0022\u003E\u003C\/i\u003E\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022https:\/\/success.sciforma.com\/system\/files\/release-files\/SciformaScriptletAPI70_10.zip\u0022 target=\u0022_blank\u0022\u003EJavascript documentation\u003Ci class=\u0022fas fa-download\u0022\u003E\u003C\/i\u003E\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022https:\/\/success.sciforma.com\/system\/files\/release-files\/sciforma-restapi-2024.09.zip\u0022 target=\u0022_blank\u0022\u003EREST API documentation \u0026amp; OpenAPI\u003Ci class=\u0022fas fa-download\u0022\u003E\u003C\/i\u003E\u003C\/a\u003E\u003C\/li\u003E\u003C\/ul\u003E\u003C\/div\u003E\u003Cdiv class=\u0022item-list\u0022\u003E\u003Ch3\u003EFeature presentation\u003C\/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Ca href=\u0022https:\/\/keyedin.navattic.com\/homepage\u0022 target=\u0022_blank\u0022\u003EHomepage\u003Ci class=\u0022fas fa-external-link-alt\u0022\u003E\u003C\/i\u003E\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022https:\/\/keyedin.navattic.com\/multi-project-selection\u0022 target=\u0022_blank\u0022\u003EMulti-Project Selection\u003Ci class=\u0022fas fa-external-link-alt\u0022\u003E\u003C\/i\u003E\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022https:\/\/keyedin.navattic.com\/shared-views\u0022 target=\u0022_blank\u0022\u003EShared Views\u003Ci class=\u0022fas fa-external-link-alt\u0022\u003E\u003C\/i\u003E\u003C\/a\u003E\u003C\/li\u003E\u003C\/ul\u003E\u003C\/div\u003E\u003Cdiv class=\u0022item-list\u0022\u003E\u003Ch3\u003ENotices\u003C\/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/move-java-21-june-release\u0022 hreflang=\u0022en\u0022\u003E26\/02\/2025 | Move to Java 21 - June Release\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/notice-about-java-21\u0022 hreflang=\u0022en\u0022\u003E26\/02\/2025 | Notice about Java 21\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/notice-about-oracles-java-8-1.8.0382\u0022 hreflang=\u0022en\u0022\u003E21\/08\/2023 | Notice about Oracle\u2019s Java 8 (1.8.0_382)\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/end-life-announcement-legacy-snet-platform-pod-9\u0022 hreflang=\u0022en\u0022\u003E02\/12\/2022 | End of Life Announcement Legacy SNET Platform (Pod 9)\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/notice-about-sciforma-2022.02-build-8837\u0022 hreflang=\u0022en\u0022\u003E15\/03\/2022 | Notice about Sciforma 2022.02 (Build 8837)\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/end-life-announcement-sciforma-6\u0022 hreflang=\u0022en\u0022\u003E16\/02\/2022 | End of Life Announcement for Sciforma 6\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/end-life-announcement-sciforma-virtual-appliance-sva\u0022 hreflang=\u0022en\u0022\u003E16\/02\/2022 | End of Life Announcement for Sciforma Virtual Appliance (SVA)\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/support-openjdk\u0022 hreflang=\u0022en\u0022\u003E16\/11\/2021 | Support of OpenJDK\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/new-naming-convention-sciformas-release\u0022 hreflang=\u0022en\u0022\u003E04\/03\/2020 | New naming convention for Sciforma\u2019s release \u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/time-distributed-cells-text-blocks-not-handling-properly-start-and-finish-dates-partial-intervals\u0022 hreflang=\u0022en\u0022\u003E02\/12\/2019 | Time distributed cells in text blocks not handling properly the start and finish dates of partial intervals\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/notice-about-oracles-java-8-free-updates\u0022 hreflang=\u0022en\u0022\u003E28\/08\/2019 | Notice about Oracle\u2019s Java 8 free updates\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/enforced-strong-passwords-built-authentication\u0022 hreflang=\u0022en\u0022\u003E27\/02\/2018 | Enforced strong passwords for built-in authentication\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/reminder-end-oracle-and-mssql-support\u0022 hreflang=\u0022en\u0022\u003E21\/11\/2017 | Reminder : End of Oracle and MSSQL support \u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/sciforma-virtual-appliance-sva-available\u0022 hreflang=\u0022en\u0022\u003E29\/09\/2017 | Sciforma virtual appliance (SVA) available\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/users-might-fail-see-all-expected-resources-7.0w-7.0x\u0022 hreflang=\u0022en\u0022\u003E16\/09\/2017 | Users Might Fail To See All Expected Resources [7.0w, 7.0x]\u003C\/a\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022\/en\/upcoming-certificate-expiration-december-9-2017\u0022 hreflang=\u0022en\u0022\u003E15\/09\/2017 | Upcoming Certificate Expiration on December 9, 2017 [\u0026lt;6.0r, \u0026lt;7.0o]\u003C\/a\u003E\u003C\/li\u003E\u003C\/ul\u003E\u003C\/div\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n","settings":null}]
+</script>
+<script type="application/vnd.drupal-ajax" data-big-pipe-event="stop"></script>
+
+
+<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" tabindex="-1" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""><div class="lb-nav"><a class="lb-prev" aria-label="Previous image" href="https://success.sciforma.com/fr/release/2024.09"></a><a class="lb-next" aria-label="Next image" href="https://success.sciforma.com/fr/release/2024.09"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div><script src="./2024-09_files/google_tag.script.js.téléchargement"></script><scribe-shadow id="crxjs-ext" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible; visibility: visible;"><template shadowrootmode="open"><div id="root-scribe-elem" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; overflow: visible; color: rgb(15, 23, 42);"><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;"><ol tabindex="-1" class="fixed bottom-auto right-0 top-0 z-[999999] flex max-h-screen w-[400px] max-w-full p-4"></ol></div></div><link rel="stylesheet" href="chrome-extension://okfkdaglfjjjfefdcppliegebpoegaii/assets/style.css"></template></scribe-shadow></body></html>
