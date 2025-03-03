@@ -5,10 +5,10 @@ import locale
 
 from PyQt6.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QPushButton, QFileDialog, QLabel,
-    QTextEdit, QMessageBox, QComboBox, QProgressBar
+    QTextEdit, QMessageBox, QComboBox, QProgressBar, QHBoxLayout
 )
 from PyQt6.QtCore import Qt, QThread, pyqtSignal, QUrl
-from PyQt6.QtGui import QDesktopServices, QTextCharFormat, QColor
+from PyQt6.QtGui import QDesktopServices, QTextCharFormat, QColor, QIcon
 
 
 class WorkerThread(QThread):
@@ -62,12 +62,14 @@ class PatchNoteUI(QWidget):
             QWidget {
                 background-color: #f4f4f4;
                 font-size: 14px;
+                font-family: Arial, sans-serif;
             }
             QPushButton {
                 background-color: #0078D7;
                 color: white;
-                padding: 8px;
+                padding: 10px;
                 border-radius: 5px;
+                font-size: 14px;
             }
             QPushButton:hover {
                 background-color: #005A9E;
@@ -75,15 +77,27 @@ class PatchNoteUI(QWidget):
             QTextEdit {
                 background-color: white;
                 border: 1px solid #ccc;
-                padding: 5px;
+                padding: 10px;
+                font-size: 14px;
             }
             QProgressBar {
                 border: 1px solid #aaa;
                 text-align: center;
                 background: white;
+                height: 20px;
+                border-radius: 5px;
             }
             QProgressBar::chunk {
                 background-color: #0078D7;
+                border-radius: 5px;
+            }
+            QLabel {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            QComboBox {
+                padding: 5px;
+                font-size: 14px;
             }
         """)
 
@@ -99,6 +113,7 @@ class PatchNoteUI(QWidget):
 
         # Bouton sélection fichier
         self.btn_select_file = QPushButton("Choisir un fichier HTML", self)
+        self.btn_select_file.setIcon(QIcon("icons/open-file.png"))  # Ajout d'une icône
         self.btn_select_file.clicked.connect(self.select_file)
         layout.addWidget(self.btn_select_file)
 
@@ -108,6 +123,7 @@ class PatchNoteUI(QWidget):
 
         # Bouton Exécution du pipeline
         self.btn_run = QPushButton("Lancer l'analyse", self)
+        self.btn_run.setIcon(QIcon("icons/run.png"))  # Ajout d'une icône
         self.btn_run.setEnabled(False)
         self.btn_run.clicked.connect(self.run_pipeline)
         layout.addWidget(self.btn_run)
@@ -126,6 +142,7 @@ class PatchNoteUI(QWidget):
 
         # Bouton Ouvrir le fichier Master
         self.btn_open_master = QPushButton("Ouvrir le fichier Master", self)
+        self.btn_open_master.setIcon(QIcon("icons/open.png"))  # Ajout d'une icône
         self.btn_open_master.setEnabled(False)
         self.btn_open_master.clicked.connect(self.open_master_file)
         layout.addWidget(self.btn_open_master)

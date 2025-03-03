@@ -2,6 +2,7 @@ import sys
 import os
 import pandas as pd
 
+
 # Importer le fichier module_mapping.py
 try:
     import module_mapping as module_mapping
