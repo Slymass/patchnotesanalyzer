@@ -1,7 +1,0 @@
-PyQt6
-bs4
-module_mapping
-openpyxl
-pandas
-stdlib_list
-pyyaml
