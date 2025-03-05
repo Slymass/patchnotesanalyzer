@@ -30,9 +30,13 @@ def process_html_file(html_file, system):
         sys.exit(1)
 
     base_name = os.path.splitext(os.path.basename(html_file))[0]
-    correctifs_file = f"{base_name}_correctifs.xlsx"
-    enhancements_file = f"{base_name}_enhancements.xlsx"
-    master_file = f"{base_name}_Master.xlsx"
+    
+    RESULTS_FOLDER = "backend/results"
+    os.makedirs(RESULTS_FOLDER, exist_ok=True)
+
+    correctifs_file = os.path.join(RESULTS_FOLDER, f"{base_name}_correctifs.xlsx")
+    enhancements_file = os.path.join(RESULTS_FOLDER, f"{base_name}_enhancements.xlsx")
+    master_file = os.path.join(RESULTS_FOLDER, f"{base_name}_Master.xlsx")
 
     commands = [
         ["python", "extractors/extract_sciforma.py", html_file, "--type", "correctifs", correctifs_file],

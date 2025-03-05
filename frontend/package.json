@@ -1,0 +1,16 @@
+{
+    "name": "frontend",
+    "version": "1.0.0",
+    "description": "Frontend for patch notes automation",
+    "main": "index.js",
+    "dependencies": {
+        "react-router-dom": "^7.2.0",
+        "react-scripts": "^5.0.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build"
+    },
+    "author": "",
+    "license": "MIT"
+}
